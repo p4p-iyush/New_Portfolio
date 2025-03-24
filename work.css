@@ -1,0 +1,103 @@
+.project_image img{
+    /* width: 100%; */
+    border-radius: 2rem;
+    object-fit: cover;
+
+}
+.project_image{
+    border-radius: 2rem;
+}
+.work_main_container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    /* align-items: center; */
+}
+
+.work_left{
+    width: 50%;
+    gap: 1rem   ;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.work_right{
+    width: 100%;
+      display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.work_collection{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    justify-content: space-evenly;
+
+}
+
+
+/* Card Container */
+.word_card {
+    width: 100%;
+    max-width: 350px; 
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(
+        145deg,
+        rgba(30, 30, 30, 1) 0%,
+        rgba(15, 15, 15, 1) 50%,
+        rgb(1, 1, 1) 100%
+      );
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+}
+
+/* Work Image Section */
+.work_image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.work_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Work Details Section */
+.work_details {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f9f9f9; */
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  
+}
+
+/* Work Title */
+.work_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* color: #333; */
+    text-transform: capitalize;
+}
+
+/* Work Arrow */
+.work_arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007BFF; /* Blue color for the arrow */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}

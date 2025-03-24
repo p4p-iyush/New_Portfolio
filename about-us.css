@@ -1,0 +1,44 @@
+.credentails_about{
+    width:25%;
+}
+.aboutImage{
+    width: 25%;
+}
+.aboutImage .image{
+    width: 100%;
+}
+.Self_summary{
+    display: flex;
+    justify-content: center;
+}
+.Self_summary{
+    font-size: 2.5rem;
+}
+.Self_summary img{
+    /* width: 100%; */
+    object-fit: contain;
+}
+.summary{
+    width: 75%;
+}
+.about_summary{
+    width: 100%;
+    
+}
+.about_summary h1{
+    font-size: medium;
+}
+.experience{
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.experience ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.experience ul h3 ,ul p{
+    color: gray;
+}

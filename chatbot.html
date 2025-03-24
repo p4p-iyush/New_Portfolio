@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Interface</title>
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Main Content -->
+  <div class="main_container">
+    <section class="chat-section">
+      <!-- Chat Screen -->
+      <div class="chat-screen">
+        <div class="chat-header">
+          <h2>Chat with Bot</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+          <!-- Messages will appear here -->
+        </div>
+      </div>
+
+      <!-- Input Field -->
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </section>
+  </div>
+
+  <!-- JavaScript for Chatbot Interaction -->
+  <script>
+    // Function to handle chatbot interaction
+    const chatBox = document.getElementById('chat-box');
+    const userInput = document.getElementById('user-input');
+    const sendBtn = document.getElementById('send-btn');
+
+    // Sample bot responses
+    const botResponses = {
+      "hi": "Hello! How can I assist you?",
+      "hello": "Hi there! What's on your mind?",
+      "how are you": "I'm just a bot, but I'm here and ready to help!",
+      "bye": "Goodbye! Have a great day!",
+      "default": "I'm not sure how to respond to that. Can you try something else?"
+    };
+
+    // Function to add a message to the chat box
+    function addMessage(sender, message) {
+      const messageElement = document.createElement('div');
+      messageElement.classList.add('message', sender);
+      messageElement.textContent = message;
+      chatBox.appendChild(messageElement);
+      chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the latest message
+    }
+
+    // Handle user input and bot response
+    sendBtn.addEventListener('click', () => {
+      const userMessage = userInput.value.trim();
+      if (userMessage === "") return;
+
+      // Add user message to chat box
+      addMessage('user', userMessage);
+
+      // Get bot response
+      const botMessage = botResponses[userMessage.toLowerCase()] || botResponses['default'];
+      setTimeout(() => addMessage('bot', botMessage), 500); // Simulate bot delay
+
+      // Clear input field
+      userInput.value = '';
+    });
+
+    // Allow pressing Enter to send a message
+    userInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        sendBtn.click();
+      }
+    });
+  </script>
+</body>
+</html>
