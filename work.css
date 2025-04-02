@@ -33,7 +33,7 @@
 .work_collection{
     display: flex;
     flex-wrap: wrap;
-    /* gap: 2rem; */
+    gap: 2rem;
     justify-content: space-evenly;
 
 }

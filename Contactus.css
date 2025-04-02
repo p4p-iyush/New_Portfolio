@@ -1,0 +1,119 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color:#fff;
+    height: 100vh;
+    padding: 2rem;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 33%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.info-item{
+    display: flex;
+    gap: 1rem;
+}
+.info-item i{
+    font-size: 1.5rem;
+}
+.info-item span{
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.info-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-content h3{
+    font-size: 1rem;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+  }
+  
+  /* Styling for all input fields (text, email, etc.) */
+  input[type="text"],
+  input[type="email"] {
+    padding: 12px; /* Padding inside the input fields */
+    font-size: 1rem; /* Font size inside the input fields */
+    border: none; /* No borders */
+    border-radius: 4px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: #fff; /* White text color */
+    outline: none; /* Remove default blue outline on focus */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  }
+  
+  /* Focus effect when user clicks on input fields */
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter background on focus */
+    transform: scale(1.02); /* Slight zoom-in effect */
+  }
+  
+  /* Styling for the textarea */
+  textarea {
+    padding: 12px; /* Padding inside the textarea */
+    font-size: 1rem; /* Font size inside the textarea */
+    border: none; /* No borders */
+    border-radius: 4px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: #fff; /* White text color */
+    outline: none; /* Remove default blue outline on focus */
+    resize: vertical; /* Allow only vertical resizing */
+    min-height: 150px; /* Minimum height for the textarea */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  }
+  
+  /* Focus effect when user clicks on textarea */
+  textarea:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter background on focus */
+    transform: scale(1.02); /* Slight zoom-in effect */
+  }
+  
+  /* Styling for the Submit Button */
+  button[type="submit"] {
+    padding: 12px; /* Padding inside the button */
+    font-size: 1rem; /* Font size inside the button */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border: none; /* No borders */
+    border-radius: 4px; /* Rounded corners */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  }
+  
+ .contact-us-img{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+ }

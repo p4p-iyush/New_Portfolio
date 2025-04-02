@@ -64,35 +64,32 @@
   .input-container {
     display: flex;
     width: 100%;
-    gap: 10px;
+    /* gap: 10px; */
     margin-top: 10px;
   }
   
   #user-input {
     flex: 1;
     padding: 10px;
-    border-radius: 1rem;
+    border-radius: 1rem 0 0 1rem;
     border: none;
     font-size: 1rem;
-    background-color: #222;
+    background-color: #1a1a1a;
     color: #fff;
   }
   
   #user-input:focus {
     outline: none;
-    background-color: #333;
+    background-color: #1a1a1a;
   }
   
-  #send-btn {
-    padding: 10px;
-    border-radius: 1rem;
-    border: none;
-    background-color: #5B78F6;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #send-btn:hover {
-    background-color: #4a65e3;
-  }
+    #send-btn {
+      padding: 10px;
+      border-radius: 0 1rem 1rem 0;
+      border: none;
+      background-color: #1a1a1a;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
