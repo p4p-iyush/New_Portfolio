@@ -1,108 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot Interface</title>
-  <link rel="stylesheet" href="chatbot.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-  <nav>
-    <section class="logo"><img src="./Logo.png" alt></section>
-    <section class="nav-links">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <nav>
+      <section class="logo"><img src="./Logo.png" alt></section>
+      <section class="nav-links">
         <a href="./index.html">
-            <li>Home</li>
+          <li>Home</li>
         </a>
         <a href="./about-us.html">
-            <li>About</li>
+          <li>About</li>
         </a>
         <a href="work.html">
-            <li>Works</li>
+          <li>Works</li>
         </a>
         <a href="Certificates.html">
-            <li>Certificates</li>
+          <li>Certificates</li>
         </a>
         <a href="Contactus.html">
-            <li>Contact</li>
+          <li>Contact</li>
         </a>
-    </section>
-    <section class="talk-btn">
+      </section>
+      <section class="talk-btn">
         <a href="chatbot.html">
-            CHATBOT
+          CHATBOT
         </a> </section>
-</nav>
-  <!-- Main Content -->
-  <div class="main_container">
-    <section class="chat-section">
-      <!-- Chat Screen -->
-      <div class="chat-screen">
-        <div class="chat-header">
-          <h2>Chat with Bot</h2>
+    </nav>
+    <!-- Main Content -->
+    <div class="main_container">
+      <section class="chat-section">
+        <!-- Chat Screen -->
+        <div class="chat-screen">
+          <div class="chat-header">
+            <h2>Chat with Bot</h2>
+          </div>
+          <div class="chat-box" id="chat-box">
+            <!-- Messages will appear here -->
+          </div>
         </div>
-        <div class="chat-box" id="chat-box">
-          <!-- Messages will appear here -->
+
+        <!-- Input Field -->
+        <div class="input-container">
+          <input type="text" id="user-input"
+            placeholder="Type your message..." />
+          <button id="send-btn">
+            <div class="work_arrow"> <img decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="Star"></div>
+          </button>
         </div>
-      </div>
+      </section>
+    </div>
 
-      <!-- Input Field -->
-      <div class="input-container">
-        <input type="text" id="user-input" placeholder="Type your message..." />
-        <button id="send-btn">
-          <div class="work_arrow">  <img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star"></div>
-        </button>
-      </div>
-    </section>
-  </div>
-
-  <!-- JavaScript for Chatbot Interaction -->
-  <script>
-    // Function to handle chatbot interaction
-    const chatBox = document.getElementById('chat-box');
-    const userInput = document.getElementById('user-input');
-    const sendBtn = document.getElementById('send-btn');
-
-    // Sample bot responses
-    const botResponses = {
-      "hi": "Hello! How can I assist you?",
-      "hello": "Hi there! What's on your mind?",
-      "how are you": "I'm just a bot, but I'm here and ready to help!",
-      "bye": "Goodbye! Have a great day!",
-      "default": "I'm not sure how to respond to that. Can you try something else?"
-    };
-
-    // Function to add a message to the chat box
-    function addMessage(sender, message) {
-      const messageElement = document.createElement('div');
-      messageElement.classList.add('message', sender);
-      messageElement.textContent = message;
-      chatBox.appendChild(messageElement);
-      chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the latest message
-    }
-
-    // Handle user input and bot response
-    sendBtn.addEventListener('click', () => {
-      const userMessage = userInput.value.trim();
-      if (userMessage === "") return;
-
-      // Add user message to chat box
-      addMessage('user', userMessage);
-
-      // Get bot response
-      const botMessage = botResponses[userMessage.toLowerCase()] || botResponses['default'];
-      setTimeout(() => addMessage('bot', botMessage), 500); // Simulate bot delay
-
-      // Clear input field
-      userInput.value = '';
-    });
-
-    // Allow pressing Enter to send a message
-    userInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') {
-        sendBtn.click();
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      async function sendMessage() {
+          const inputField = document.getElementById("user-input");  // Fixed ID
+          let input = inputField.value.trim();
+          if (input === "") return;
+      
+          addChat("user", input);
+          inputField.value = "";
+      
+          try {
+              const response = await fetch("https://personal-chatbot-vhhq.onrender.com", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ question: input })
+              });
+      
+              if (!response.ok) {
+                  throw new Error(`Server Error: ${response.statusText}`);
+              }
+      
+              const data = await response.json();
+              addChat("bot", data.response || "I'm here to help!");
+          } catch (error) {
+              console.error("Error communicating with chatbot:", error);
+              addChat("bot", "Sorry, I couldn't process that. Try again.");
+          }
       }
-    });
-  </script>
-</body>
+      
+      function addChat(sender, message) {
+          const chatBody = document.getElementById("chat-box"); // Fixed ID
+          const messageDiv = document.createElement("div");
+          messageDiv.classList.add("chat-message", sender === "user" ? "user-message" : "bot-message");
+          messageDiv.textContent = message;
+          chatBody.appendChild(messageDiv);
+          chatBody.scrollTop = chatBody.scrollHeight;
+      }
+      
+      // Event Listeners
+      document.getElementById("user-input").addEventListener("keypress", function (event) {
+          if (event.key === "Enter") sendMessage();
+      });
+      
+      document.getElementById("send-btn").addEventListener("click", sendMessage); // Added button click event
+      </script>
+
+    <script type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+    <script type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+
+</script>
+
+  </body>
 </html>
