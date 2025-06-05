@@ -1,0 +1,85 @@
+{
+  "certificates": [
+    {
+      "id": "cyber-security",
+      "title": " JavaScript (HackerRank)",
+      "image": "./assests/Certificates/jsBasic.png",
+      "issuer": "HackerRank",
+      "date": "2023-04-10",
+      "category": "programming"
+    },
+    {
+      "id": "hackerrank-skills",
+      "title": "CSS (HackerRank)",
+      "image": "./assests/Certificates/css certificate .png",
+      "issuer": "HackerRank",
+      "date": "2023-04-10",
+      "category": "programming"
+    },
+    {
+      "id": "ai-builder",
+      "title": "AI Builder Lab (H2SKILL)",
+      "image": "./assests/Certificates/Hack2skill-Certificate.png",
+      "issuer": "Hack2Skill",
+      "date": "2023-03-20",
+      "category": "ai"
+    },
+    {
+      "id": "python-essentials-1",
+      "title": "Python Essentials 1 (CISCO)",
+      "image": "./assests/Certificates/python ess1.png",
+      "issuer": "CISCO",
+      "date": "2023-02-15",
+      "category": "programming"
+    },
+    {
+      "id": "python-essentials-2",
+      "title": "Python Essentials 2 (CISCO)",
+      "image": "./assests/Certificates/pyhton ess2.png",
+      "issuer": "CISCO",
+      "date": "2023-01-10",
+      "category": "programming"
+    }
+,{
+    "id": "CCNA1",
+    "title": "Introduction to Networks (CISCO Netacad)",
+    "image": "./assests/Certificates/CCNA1.png",
+    "issuer": "CISCO Networking Academy",
+    "date": "2022-12-05",
+    "category": "networking"
+},
+{
+    "id": "CCNA2",
+    "title": "Switching, Routing, and Wireless Essentials (CISCO Netacad)",
+    "image": "./assests/Certificates/CCNA2.png",
+    "issuer": "CISCO Networking Academy",
+    "date": "2022-11-01",
+    "category": "networking"
+},
+{
+    "id": "CCNA3",
+    "title": "Enterprise Networking, Security, and Automation (CISCO Netacad)",
+    "image": "./assests/Certificates/CCNA3.png",
+    "issuer": "CISCO Networking Academy",
+    "date": "2022-10-01",
+    "category": "networking"
+},
+{
+    "id": "IntroductiontoCybersecurity",
+    "title": "Introduction to Cybersecurity (CISCO Netacad)",
+        "image": "./assests/Certificates/Introduction to cycbersecurity.png",
+    "issuer": "CISCO Networking Academy",
+    "date": "2022-09-01",
+    "category": "networking"
+    }
+,{
+    "id":"cyber-security-essentials",
+    "title": "Cyber Security Essentials (CISCO Netacad)",
+    "image": "./assests/Certificates/cybersecurityEssentials.png",
+    "issuer": "CISCO Networking Academy",
+    "date": "2022-08-01",
+    "category": "security"
+
+}
+  ]
+}

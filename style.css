@@ -404,3 +404,159 @@ color: gray;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 }
+
+
+
+/* Existing CSS remains the same until the end */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main_container {
+    gap: 1.5rem;
+  }
+  
+  main section {
+    width: 90vw;
+  }
+  
+  .sub-section1_1 {
+    padding: 30px;
+  }
+  
+  .sub-section1_1 .content-sub-1 h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    width: 60%;
+  }
+  
+  .section1, .section2, .section3 {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .sub-section1_1, .sub-section1_2,
+  .sub-section2_1, .sub-section2_2, .sub-section2_3,
+  .sub-section3_1, .sub-section3_2 {
+    width: 100%;
+  }
+  
+  .sub-details-box {
+    flex-direction: column;
+  }
+  
+  .credentails, .porfolios {
+    width: 100%;
+  }
+  
+  .card-arrow {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-links {
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .talk-btn {
+    margin-top: 15px;
+  }
+  
+  .sub-section1_1 {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .sub-section1_1 .image, 
+  .sub-section1_1 .content-sub-1 {
+    width: 100%;
+  }
+  
+  .cards {
+    flex-direction: column;
+  }
+  
+  .social-icon a i {
+    font-size: 2.5rem;
+  }
+  
+  .service {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-links {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+  }
+  
+  .sub-section1_1 .content-sub-1 h2 {
+    font-size: 1.5rem;
+  }
+  
+  .sub-section1_1 .content-sub-1 h3 {
+    font-size: 0.8rem;
+  }
+  
+  .sub-section1_1 .content-sub-1 h4 {
+    font-size: 0.6rem;
+  }
+  
+  .social-icon {
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+  
+  .join_us, .join_us_arrow {
+    font-size: 1.2rem;
+  }
+  
+  .credentails, .porfolios, .sub-marque, 
+  .sub-section1_1, .box, .card {
+    padding: 15px;
+    border-radius: 1.5rem;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 400px) {
+  .talk-btn {
+    padding: 8px 15px;
+    height: 40px;
+  }
+  
+  .sub-section1_1 .content-sub-1 h2 {
+    font-size: 1.3rem;
+  }
+  
+  .deatails-credenatild h4 {
+    font-size: 1.2rem;
+  }
+  
+  .card-number {
+    font-size: 1.5rem;
+  }
+  
+  .card-content h3 {
+    font-size: 0.9rem;
+  }
+}

@@ -1,34 +1,31 @@
-.credentails_about{
-    width:25%;
-}
-.aboutImage{
+/* Existing styles */
+.credentails_about {
     width: 25%;
 }
-.aboutImage .image{
+.aboutImage {
+    width: 25%;
+}
+.aboutImage .image {
     width: 100%;
 }
-.Self_summary{
+.Self_summary {
     display: flex;
     justify-content: center;
-}
-.Self_summary{
     font-size: 2.5rem;
 }
-.Self_summary img{
-    /* width: 100%; */
+.Self_summary img {
     object-fit: contain;
 }
-.summary{
+.summary {
     width: 75%;
 }
-.about_summary{
+.about_summary {
     width: 100%;
-    
 }
-.about_summary h1{
+.about_summary h1 {
     font-size: medium;
 }
-.experience{
+.experience {
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
@@ -39,6 +36,72 @@
     gap: 1rem;
     flex-direction: column;
 }
-.experience ul h3 ,ul p{
+.experience ul h3,
+.experience ul p {
     color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .Self_summary {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .credentails_about,
+    .aboutImage {
+        width: 30%;
+    }
+    .summary {
+        width: 70%;
+    }
+    .Self_summary {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .credentails_about,
+    .aboutImage {
+        width: 100%;
+    }
+    .summary {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .Self_summary {
+        /* flex-direction: column; */
+        align-items: center;
+        font-size: 1.8rem;
+    }
+    .about_summary h1 {
+        font-size: small;
+    }
+    .experience ul {
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Self_summary {
+        font-size: 1.5rem;
+    }
+ 
+    .experience ul {
+        gap: 0.5rem;
+    }
+    .experience ul h3 {
+        font-size: 0.9rem;
+    }
+    .experience ul p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .Self_summary {
+        font-size: 1rem;
+    }
+  
 }

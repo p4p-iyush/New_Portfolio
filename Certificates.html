@@ -1,95 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Certificate</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iconoir@latest/css/iconoir.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iconoir@latest/css/iconoir.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="work.css" />
+    <link rel="stylesheet" href="./about-us.css" />
+    <style>
+      /* Fullscreen image viewer styles */
+      .image-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow: auto;
+      }
+      
+      .modal-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+      
+      .modal-image {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+      }
+      
+      .close-modal {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      .close-modal:hover {
+        color: #ccc;
+      }
+      
+      /* Certificate card hover effect */
+      .word_card {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      
+      .word_card:hover {
+        transform: scale(1.02);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <section class="logo"><img src="./assests/Logo.png" alt /></section>
+      <section class="nav-links">
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./about-us.html"><li>About</li></a>
+        <a href="work.html"><li>Works</li></a>
+        <a href="Certificates.html"><li>Certificates</li></a>
+        <a href="Contactus.html"><li>Contact</li></a>
+      </section>
+      <section class="talk-btn">
+        <a href="chatbot.html"> CHATBOT </a>
+      </section>
+    </nav>
+    
+    <main class="work_main_container">
+      <div class="work_right" id="certificatesRight">
+        <div class="work_collection" id="rightColumn">
+          <!-- Certificates will be inserted here by JavaScript -->
+        </div>
+      </div>
+      <div class="work_left" id="leftColumn">
+        <!-- Certificates will be inserted here by JavaScript -->
+      </div>
+    </main>
+    
+    <!-- Fullscreen Image Modal -->
+    <div id="imageModal" class="image-modal">
+      <span class="close-modal">&times;</span>
+      <div class="modal-content">
+        <img id="expandedImage" class="modal-image" src="" alt="Expanded Certificate">
+      </div>
+    </div>
 
-        <!-- Font Awesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fetch certificate data from JSON
+        fetch("certificates.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const certificates = data.certificates;
+            const rightColumn = document.getElementById("rightColumn");
+            const leftColumn = document.getElementById("leftColumn");
 
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="work.css">
-        <link rel="stylesheet" href="./about-us.css">
-    </head>
-    <body>
-        <nav>
-            <section class="logo"><img src="./Logo.png" alt></section>
-            <section class="nav-links">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./about-us.html">
-                    <li>About</li>
-                </a>
-                <a href="work.html">
-                    <li>Works</li>
-                </a>
-                <a href="Certificates.html">
-                    <li>Certificates</li>
-                </a>
-                <a href="Contactus.html">
-                    <li>Contact</li>
-                </a>
-            </section>
-            <section class="talk-btn">
-                <a href="chatbot.html">
-                    CHATBOT
-                </a> </section>
-        </nav>
-        <main class="work_main_container">
-            <div class="work_left">
-                <div class="word_card">
-                    <div class="work_image">
-                        <img src="python ess1.png" alt="Python Essentials 1">
-                    </div>
-                    <div class="work_details">
-                        <div class="work_title">Python Essentials 1 (CISCO)</div>   
-                    </div>
-                </div>
-                <div class="word_card">
-                    <div class="work_image">
-                        <img src="pyhton ess2.png" alt="Python Essentials 2">
-                    </div>
-                    <div class="work_details">
-                        <div class="work_title">Python Essentials 2 (CISCO)</div>
-                    </div>
-                </div>
+            // Distribute certificates between columns
+            certificates.forEach((cert) => {
+              const certCard = createCertificateCard(cert);
+
+              // Check if issuer contains "CISCO" (case insensitive)
+              if (cert.issuer.toLowerCase().includes("cisco")) {
+                rightColumn.appendChild(certCard);
+              } else {
+                leftColumn.appendChild(certCard);
+              }
+            });
+          })
+          .then(() => {
+            // Add the "ALL CERTIFICATES" heading to the right column
+            const rightColumn = document.getElementById("rightColumn");
+            const heading = document.createElement("div");
+            heading.className = "Self_summary";
+            heading.innerHTML = `
+              <img src="./assests/image.png" alt>
+              <h1>ALL CERTIFICATES</h1>
+              <img src="./assests/image.png" alt>
+            `;
+            rightColumn.insertBefore(heading, rightColumn.firstChild);
+            
+            // Add click event listeners to all certificate images
+            setupImageClickHandlers();
+          })
+          .catch((error) => console.error("Error loading certificates:", error));
+
+        // Function to create a certificate card
+        function createCertificateCard(certificate) {
+          const card = document.createElement("div");
+          card.className = "word_card";
+
+          card.innerHTML = `
+            <div class="work_image">
+              <img src="${certificate.image}" alt="${certificate.title}" data-full="${certificate.image}">
             </div>
-            <div class="work_right">
-                <div class="Self_summary">
-                    <img src="./image.png" alt>
-                    <h1>ALL CERTIFICATES</h1>
-                    <img src="./image.png" alt>
-                </div>
-                <div class="work_collection">
-                    <div class="word_card">
-                        <div class="work_image">
-                            <img src="jsBasic.png" alt="Cyber Security">
-                        </div>
-                        <div class="work_details">
-                            <div class="work_title">Cyber Security (CISCO Netacad)</div>
-                        </div>
-                    </div>
-                    <div class="word_card">
-                        <div class="work_image">
-                            <img src="css certificate .png" alt="HackerRank work">
-                        </div>
-                        <div class="work_details">
-                            <div class="work_title">CSS, JavaScript, Python (HackerRank)</div>
-                        </div>
-                    </div>
-                    <div class="word_card">
-                        <div class="work_image">
-                            <img src="Hack2skill-Certificate.png" alt="AI Builder Lab">
-                        </div>
-                        <div class="work_details">
-                            <div class="work_title">AI Builder Lab (H2SKILL)</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="work_details">
+              <div class="work_title">${certificate.title}</div>
             </div>
-        </main>
-    </body>
+          `;
+
+          return card;
+        }
+
+        // Function to setup click handlers for images
+        function setupImageClickHandlers() {
+          const modal = document.getElementById("imageModal");
+          const modalImg = document.getElementById("expandedImage");
+          const closeBtn = document.querySelector(".close-modal");
+          
+          // Get all certificate images
+          const images = document.querySelectorAll(".work_image img");
+          
+          images.forEach(img => {
+            img.addEventListener("click", function() {
+              modal.style.display = "block";
+              modalImg.src = this.dataset.full;
+              modalImg.alt = this.alt;
+            });
+          });
+          
+          // Close modal when clicking X
+          closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+          });
+          
+          // Close modal when clicking outside image
+          modal.addEventListener("click", function(e) {
+            if (e.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+          
+          // Close modal with ESC key
+          document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape" && modal.style.display === "block") {
+              modal.style.display = "none";
+            }
+          });
+        }
+      });
+    </script>
+  </body>
 </html>

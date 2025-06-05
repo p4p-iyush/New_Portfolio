@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "id": "jpl-ppl",
+      "title": "JPL PPL (Coding competition)",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "A competitive programming competition organized by JPL featuring complex algorithmic challenges.",
+      "technologies": ["Python", "MERN Stack", "Data Structures"],
+      "date": "2023-05-15",
+      "link": "https://example.com/jpl-ppl"
+    },
+    {
+      "id": "sankat-mochan",
+      "title": "Sankat Mochan",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "A disaster management application that helps coordinate rescue efforts during emergencies.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express"],
+      "date": "2023-03-10",
+      "link": "https://example.com/sankat-mochan"
+    },
+    {
+      "id": "collab-notes",
+      "title": "Collaborative Notes Editor",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "Real-time collaborative note taking application with markdown support.",
+      "technologies": ["Socket.io", "React", "Express"],
+      "date": "2023-02-20",
+      "link": "https://example.com/collab-notes"
+    },
+    {
+      "id": "ai-chatbot",
+      "title": "AI Based Chatbot",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "An intelligent chatbot that can answer queries about your products and services.",
+      "technologies": ["Python", "LLM", "HTML5", "CSS3"],
+      "date": "2023-01-05",
+      "link": "https://example.com/ai-chatbot"
+    },
+    {
+      "id": "portfolio-2",
+      "title": "Personal Portfolio 2",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "A redesigned personal portfolio showcasing my latest work and skills.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "date": "2022-12-15",
+      "link": "https://example.com/portfolio-2"
+    },
+    {
+      "id": "police-mis",
+      "title": "MIS For Police",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "Management Information System for police departments to track cases and personnel.",
+      "technologies": ["HTML5", "PHP", "MySQL"],
+      "date": "2022-11-20",
+      "link": "https://example.com/police-mis"
+    },
+    {
+      "id": "rentify",
+      "title": "Rentify",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "A property rental platform connecting landlords with potential tenants.",
+      "technologies": ["React", "MongoDB","PaymentGate Way", "Google Maps API"],
+      "date": "2022-10-10",
+      "link": "https://example.com/rentify"
+    }
+  ]
+}
