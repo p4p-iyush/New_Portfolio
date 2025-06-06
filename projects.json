@@ -2,66 +2,85 @@
   "projects": [
     {
       "id": "jpl-ppl",
-      "title": "JPL PPL (Coding competition)",
+      "title": "JPL PPL (Coding Competition)",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "A competitive programming competition organized by JPL featuring complex algorithmic challenges.",
-      "technologies": ["Python", "MERN Stack", "Data Structures"],
-      "date": "2023-05-15",
+      "description": "Developed a dynamic website for JPL-PPL, a competitive coding event organized at SISTec-R. The platform featured participant registration, real-time quizzes with compiler integration using Monaco Editor, and a 24x7 AI chatbot to assist participants throughout the event.",
+      "technologies": ["Python", "MERN Stack", "HTML5", "CSS3", "MONACO Editor"],
+      "date": "2025-05-30",
       "link": "https://example.com/jpl-ppl"
     },
     {
       "id": "sankat-mochan",
       "title": "Sankat Mochan",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "A disaster management application that helps coordinate rescue efforts during emergencies.",
-      "technologies": ["React", "Node.js", "MongoDB", "Express"],
-      "date": "2023-03-10",
+      "description": "A comprehensive Hospital Management System designed to streamline real-time queue management, bed allocation, and pharmacy operations. It features an interactive coordination dashboard for both patients and administrators, AI-powered report generation and analytics, and a 24×7 chatbot to handle patient queries and support.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Python", "MERN Stack"],
+      "date": "2025-03-10",
       "link": "https://example.com/sankat-mochan"
     },
     {
       "id": "collab-notes",
       "title": "Collaborative Notes Editor",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Real-time collaborative note taking application with markdown support.",
-      "technologies": ["Socket.io", "React", "Express"],
-      "date": "2023-02-20",
+      "description": "Built a simple and efficient note-taking app for personal use. It allows users to create and manage both public and private notes. Public notes are accessible without login, while private notes are available after secure user authentication.",
+      "technologies": ["HTML5", "CSS3", "Node.js", "Express"],
+      "date": "2024-12-20",
       "link": "https://example.com/collab-notes"
     },
     {
       "id": "ai-chatbot",
       "title": "AI Based Chatbot",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "An intelligent chatbot that can answer queries about your products and services.",
+      "description": "An intelligent AI-powered chatbot integrated into my personal portfolio. It mimics my responses, provides insights about my profile, and answers frequently asked questions, enhancing user interactivity on the site.",
       "technologies": ["Python", "LLM", "HTML5", "CSS3"],
-      "date": "2023-01-05",
+      "date": "2025-01-05",
       "link": "https://example.com/ai-chatbot"
     },
     {
       "id": "portfolio-2",
       "title": "Personal Portfolio 2",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "A redesigned personal portfolio showcasing my latest work and skills.",
+      "description": "A redesigned and visually engaging personal portfolio showcasing my latest skills, achievements, and project work. Built with responsive design and smooth UI/UX transitions for better user engagement.",
       "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "date": "2022-12-15",
+      "date": "2025-01-15",
       "link": "https://example.com/portfolio-2"
     },
     {
       "id": "police-mis",
       "title": "MIS For Police",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Management Information System for police departments to track cases and personnel.",
-      "technologies": ["HTML5", "PHP", "MySQL"],
-      "date": "2022-11-20",
+      "description": "Designed a Management Information System to enhance interconnectivity between police stations across Bhopal. Key modules include live case tracking, leave management, personnel transfers, and centralized case management for streamlined operations.",
+      "technologies": ["HTML5", "CSS3", "PHP", "MySQL"],
+      "date": "2024-01-20",
       "link": "https://example.com/police-mis"
     },
     {
       "id": "rentify",
       "title": "Rentify",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "A property rental platform connecting landlords with potential tenants.",
-      "technologies": ["React", "MongoDB","PaymentGate Way", "Google Maps API"],
-      "date": "2022-10-10",
+      "description": "Developed a real estate rental platform connecting landlords and tenants with features like property listings, location-based search using Google Maps API, payment integration, and secure login for both user and admin roles.",
+      "technologies": ["React", "MongoDB", "Payment Gateway", "Google Maps API"],
+      "date": "2024-10-10",
       "link": "https://example.com/rentify"
+    }
+    ,
+    {
+      "id": "asual-ecommerce",
+      "title": "Asual – Clothing E-commerce Website (Freelance)",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "A freelance e-commerce project for a clothing brand. Developed a fully functional website with user-friendly UI/UX, shopping cart, checkout, and payment integration using HTML, CSS, JS, Node.js, and Express.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "Payment Gateway"],
+      "date": "2024-02-01",
+      "link": "https://example.com/asual"
+    },
+    {
+      "id": "zenaura-ecommerce",
+      "title": "Crystal & Cannel – E-commerce Website for Zenaura (Freelance)",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "description": "Developed a MERN-based e-commerce website for Zenaura’s brand 'Crystal & Cannel'. Implemented features like Google login, secure payment gateway, product management, and a visually rich UI/UX.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Google OAuth", "Payment Gateway"],
+      "date": "2025-03-25",
+      "link": "https://example.com/zenaura"
     }
   ]
 }
