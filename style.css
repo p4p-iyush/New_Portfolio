@@ -8,51 +8,174 @@ body {
   background-color: #000;
   color: #fff;
 }
+/* Navbar CSS - Dark Theme */
 nav {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    145deg,
+    rgba(30, 30, 30, 1) 0%,
+    rgba(15, 15, 15, 1) 50%,
+    rgb(1, 1, 1) 100%
+  );
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.logo img{
-  width: 60px; 
+
+.logo img {
+  height: 50px;
+  width: auto;
   border-radius: 50%;
-  margin: 10px;
   background-color: #fff;
+  padding: 5px;
 }
+
 .nav-links {
   display: flex;
-  justify-content: space-around;
-  width: 50%;
-}
-.nav-links a{
-  text-decoration: none;
-}
-.nav-links li {
-  color: #fff;
-  text-decoration: none;
   list-style: none;
-  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 1rem;
 }
-.talk-btn {
-  background: rgb(13, 15, 15);
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.talk-btn a {
   background: linear-gradient(
     90deg,
-    rgba(13, 15, 15, 1) 0%,
-    rgba(26, 26, 28, 0.87) 49%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(26, 26, 28, 0.87) 0%,
+    rgba(13, 15, 15, 1) 37%,
+    rgba(10, 10, 10, 1) 100%
   );
-  /* border: 2px solid #fff; */
-  box-shadow: rgba(194, 192, 192, 0.24) 0px 3px 8px;
-  border-radius: 5px;
-  padding: 10px 20px;
   color: #fff;
-  height: 50px;
-  cursor: pointer;
-}
-.talk-btn a{
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
   text-decoration: none;
-  color: whitesmoke;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.talk-btn a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(36, 36, 38, 0.87) 0%,
+    rgba(23, 25, 25, 1) 37%,
+    rgba(20, 20, 20, 1) 100%
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Menu Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger i {
+  font-size: 1.8rem;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover i {
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    max-height: 100vh;
+    opacity: 1;
+  }
+
+  .nav-links a {
+    width: 80%;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .talk-btn {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    padding: 1rem;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .talk-btn a {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    width: 90%;
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+}
+/* Main container styles */
 .main_container {
   display: flex;
   justify-content: space-around;
@@ -111,7 +234,6 @@ i {
   object-fit: cover; /* Ensures image fills the area */
   border-radius: inherit; /* Inherit border-radius from parent */
 }
-
 
 .sub-section1_1 .content-sub-1 {
   width: 50%;
@@ -298,13 +420,12 @@ i {
   font-size: 1.5rem;
 }
 
-
 /* Section 3 */
 .section3 {
   display: flex;
   gap: 20px;
 }
-.sub-section3_1{
+.sub-section3_1 {
   display: flex;
   gap: 20px;
   width: 50%;
@@ -312,26 +433,26 @@ i {
   align-items: center;
   /* flex-direction: column; */
 }
-.cards{
+.cards {
   display: flex;
   gap: 20px;
   width: 100%;
 }
-.card{
+.card {
   flex: 1;
-  height: 100%; 
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.card-number{
+.card-number {
   display: flex;
   justify-content: center;
   align-items: center;
   font: 400;
   font-size: 2rem;
 }
-.card-content{
+.card-content {
   padding: 1remc;
   display: flex;
   flex-direction: column;
@@ -339,21 +460,21 @@ i {
   justify-content: center;
   align-items: center;
 }
-.card-content h3{
-font-size: 1rem;
-color: gray;
+.card-content h3 {
+  font-size: 1rem;
+  color: gray;
 }
-.card-arrow{
+.card-arrow {
   margin-top: 5rem;
 }
 
-.sub-section3_2{
+.sub-section3_2 {
   display: flex;
   gap: 20px;
   width: 50%;
   flex-direction: column;
 }
-.sub-section3_2 .star-icon{
+.sub-section3_2 .star-icon {
   position: absolute;
   left: 30px;
   top: 0;
@@ -361,18 +482,17 @@ color: gray;
   margin: 0;
 }
 
-
 /* .join_us{
   display: flex;
   gap: 10px;
   flex-direction: column;
   font-size: 1.5rem;
   } */
-  .join_us span{
-    color:#5B78F6;
-  }
-  
-  .join_us_arrow{
+.join_us span {
+  color: #5b78f6;
+}
+
+.join_us_arrow {
   margin-top: 2rem;
   display: flex;
   gap: 10px;
@@ -388,7 +508,8 @@ color: gray;
 .porfolios,
 .sub-marque,
 .sub-section1_1,
-.box,.card {
+.box,
+.card {
   background: linear-gradient(
     145deg,
     rgba(30, 30, 30, 1) 0%,
@@ -405,8 +526,6 @@ color: gray;
   transition: all 0.3s ease;
 }
 
-
-
 /* Existing CSS remains the same until the end */
 
 /* Responsive Design */
@@ -414,84 +533,71 @@ color: gray;
   .main_container {
     gap: 1.5rem;
   }
-  
+
   main section {
     width: 90vw;
   }
-  
+
   .sub-section1_1 {
     padding: 30px;
   }
-  
+
   .sub-section1_1 .content-sub-1 h2 {
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 992px) {
-  .nav-links {
-    width: 60%;
-  }
-  
-  .section1, .section2, .section3 {
+  .section1,
+  .section2,
+  .section3 {
     flex-direction: column;
     height: auto;
   }
-  
-  .sub-section1_1, .sub-section1_2,
-  .sub-section2_1, .sub-section2_2, .sub-section2_3,
-  .sub-section3_1, .sub-section3_2 {
+
+  .sub-section1_1,
+  .sub-section1_2,
+  .sub-section2_1,
+  .sub-section2_2,
+  .sub-section2_3,
+  .sub-section3_1,
+  .sub-section3_2 {
     width: 100%;
   }
-  
+
   .sub-details-box {
     flex-direction: column;
   }
-  
-  .credentails, .porfolios {
+
+  .credentails,
+  .porfolios {
     width: 100%;
   }
-  
+
   .card-arrow {
     margin-top: 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .nav-links {
-    width: 100%;
-    margin-top: 20px;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .talk-btn {
-    margin-top: 15px;
-  }
-  
   .sub-section1_1 {
     flex-direction: column;
     padding: 20px;
   }
-  
-  .sub-section1_1 .image, 
+
+  .sub-section1_1 .image,
   .sub-section1_1 .content-sub-1 {
     width: 100%;
   }
-  
+
   .cards {
     flex-direction: column;
   }
-  
+
   .social-icon a i {
     font-size: 2.5rem;
   }
-  
+
   .service {
     width: 50px;
     height: 50px;
@@ -500,38 +606,38 @@ color: gray;
 }
 
 @media (max-width: 576px) {
-  .nav-links {
-    /* flex-direction: column; */
-    align-items: center;
-  }
-  
   .logo img {
     width: 50px;
   }
-  
+
   .sub-section1_1 .content-sub-1 h2 {
     font-size: 1.5rem;
   }
-  
+
   .sub-section1_1 .content-sub-1 h3 {
     font-size: 0.8rem;
   }
-  
+
   .sub-section1_1 .content-sub-1 h4 {
     font-size: 0.6rem;
   }
-  
+
   .social-icon {
     /* flex-direction: column; */
     gap: 10px;
   }
-  
-  .join_us, .join_us_arrow {
+
+  .join_us,
+  .join_us_arrow {
     font-size: 1.2rem;
   }
-  
-  .credentails, .porfolios, .sub-marque, 
-  .sub-section1_1, .box, .card {
+
+  .credentails,
+  .porfolios,
+  .sub-marque,
+  .sub-section1_1,
+  .box,
+  .card {
     padding: 15px;
     border-radius: 1.5rem;
   }
@@ -543,19 +649,19 @@ color: gray;
     padding: 8px 15px;
     height: 40px;
   }
-  
+
   .sub-section1_1 .content-sub-1 h2 {
     font-size: 1.3rem;
   }
-  
+
   .deatails-credenatild h4 {
     font-size: 1.2rem;
   }
-  
+
   .card-number {
     font-size: 1.5rem;
   }
-  
+
   .card-content h3 {
     font-size: 0.9rem;
   }
