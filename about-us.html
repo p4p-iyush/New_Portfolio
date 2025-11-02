@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About-us</title>
+    <title>About - Piyush Jain</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/iconoir@latest/css/iconoir.css"
@@ -17,34 +17,178 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./about-us.css" />
+
+    <style>
+      /* Fix for scrollable content */
+      body {
+        overflow-y: auto;
+        min-height: 100vh;
+      }
+
+      .main_container {
+        min-height: 100vh;
+        padding-bottom: 100px;
+        overflow: visible;
+      }
+
+      /* Modal Styles */
+      .detail-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(5px);
+        overflow-y: auto;
+        animation: fadeIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .detail-modal-content {
+        background: linear-gradient(
+          145deg,
+          rgba(30, 30, 30, 1) 0%,
+          rgba(15, 15, 15, 1) 50%,
+          rgb(1, 1, 1) 100%
+        );
+        margin: 5% auto;
+        padding: 40px;
+        border-radius: 20px;
+        width: 90%;
+        max-width: 700px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        animation: slideUp 0.4s ease;
+        color: #fff;
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .detail-close {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        color: #aaa;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .detail-close:hover {
+        color: #fff;
+        transform: rotate(90deg);
+      }
+
+      .detail-modal-content h3 {
+        color: #5b78f6;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .detail-modal-content h2 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 10px 0;
+      }
+
+      .detail-modal-content p {
+        color: #aaa;
+        line-height: 1.8;
+        margin: 15px 0;
+      }
+
+      /* Clickable arrow icon */
+      .expand-icon {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        transition: transform 0.3s ease;
+        opacity: 0.7;
+      }
+
+      .expand-icon:hover {
+        transform: scale(1.2) rotate(90deg);
+        opacity: 1;
+      }
+
+      /* List item with icon */
+      .experience li {
+        position: relative;
+        padding-right: 50px;
+        /* margin-bottom: 20px; */
+      }
+
+      .experience li .expand-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      /* Section spacing */
+      .section1, .section2 {
+        margin-bottom: 30px;
+      }
+
+      /* Mobile responsive */
+      @media (max-width: 768px) {
+        .detail-modal-content {
+          width: 95%;
+          padding: 25px;
+          margin: 10% auto;
+        }
+      }
+    </style>
   </head>
   <body>
- <nav>
-        <section class="logo">
-            <img src="./assests/Logo.png" alt="Company Logo">
-        </section>
-        
-        <section class="nav-links">
-            <a href="./index.html"><li>Home</li></a>
-            <a href="./about-us.html"><li>About</li></a>
-            <a href="work.html"><li>Works</li></a>
-            <a href="Certificates.html"><li>Certificates</li></a>
-            <a href="Contactus.html"><li>Contact</li></a>
-        </section>
-        
-        <section class="talk-btn">
-            <a href="chatbot.html">CHATBOT</a>
-        </section>
-        
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
+    <nav>
+      <section class="logo">
+        <img src="./assests/photo.jpg" alt="Piyush Jain" />
+      </section>
+
+      <section class="nav-links">
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./about-us.html"><li>About</li></a>
+        <a href="work.html"><li>Works</li></a>
+        <a href="Certificates.html"><li>Certificates</li></a>
+        <a href="Contactus.html"><li>Contact</li></a>
+      </section>
+
+      <section class="talk-btn">
+        <a href="chatbot.html">CHATBOT</a>
+      </section>
+
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
+
     <main class="main_container">
       <section class="section1">
         <div class="sub-section1_1 aboutImage">
           <div class="image">
-            <img src="./assests/photo.jpg" alt />
+            <img src="./assests/photo.jpg" alt="Piyush Jain" />
           </div>
         </div>
         <div class="sub-section1_2 summary">
@@ -64,38 +208,73 @@
               <div class="join_us">
                 <h1>Piyush Jain</h1>
                 <h1>
-                  is a passionate <span>frontend developer</span> and
-                  <span>creative freelancer</span> who brings ideas to life with
-                  code. With an eye for <span>design</span> and
-                  <span>smooth animations</span>, he crafts engaging web
-                  experiences that leave a <span>lasting impact</span>.
+                  is a passionate <span>Full Stack Developer</span> and
+                  <span>Data Engineer</span> specializing in the
+                  <span>MERN Stack</span>. With expertise in
+                  <span>React.js, Node.js, MongoDB, Python, and SQL</span>, he
+                  builds <span>scalable web applications</span> and
+                  <span>data-driven solutions</span> that deliver
+                  <span>real business value</span>. Currently pursuing B.Tech in
+                  Computer Science with
+                  <span>hands-on internship experience</span> and multiple
+                  <span>successful freelance projects</span>.
                 </h1>
               </div>
               <div class="logo_section card-arrow">
-                <img
-                  decoding="async"
-                  src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
-                  alt="Star"
-                />
+                <a href="./Contactus.html">
+                  <img
+                    decoding="async"
+                    src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                    alt="Star"
+                  />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="section1">
         <div class="sub-section1_1 experience">
           <h2>Internships</h2>
           <ul>
-            <li>
+            <!-- <li>
               <h3>Sept 2024 – Oct 2024</h3>
               <h2>Data Engineering Intern</h2>
               <h3>BSY Consulting</h3>
-            </li>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('internship1')"
+              />
+            </li> -->
 
             <li>
               <h3>Nov 2024 – Dec 2024</h3>
               <h2>Web Development Intern</h2>
               <h3>BSY Consulting</h3>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('internship2')"
+              />
+            </li>
+            
+            <li>
+              <h3>Jul 2025 - Oct 2025</h3>
+              <h2>Software Development Engineer</h2>
+              <h3>HLtech India</h3>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('internship3')"
+              />
             </li>
           </ul>
         </div>
@@ -104,14 +283,40 @@
           <h2>Freelancing</h2>
           <ul>
             <li>
-              <h3>2025</h3>
-              <h2>E-Commerce Website Developer-Assual</h2>
-              <h3>Freelance</h3>
+              <h3>February 2024</h3>
+              <h2>Full Stack E-Commerce Developer - Asual</h2>
+              <h3>Freelance Project</h3>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('freelance1')"
+              />
             </li>
             <li>
-              <h3>2025</h3>
-              <h2>E-Commerce Website Developer-Zennaura</h2>
-              <h3>Freelance</h3>
+              <h3>March 2025</h3>
+              <h2>MERN Stack Developer - Zenaura</h2>
+              <h3>Freelance Project</h3>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('freelance2')"
+              />
+            </li>
+            <li>
+              <h3>Aug 2024 - Ongoing</h3>
+              <h2>Full Stack Developer - The Gypsy Adventures</h2>
+              <h3>Freelance Project</h3>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('freelance3')"
+              />
             </li>
           </ul>
         </div>
@@ -122,44 +327,180 @@
             <li>
               <h3>2022 - 2026</h3>
               <h2>B.Tech in Computer Science & Engineering</h2>
-              <h3>SISTec-R, Bhopal</h3>
-              <p>CGPA: 7.74 / 10</p>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('education1')"
+              />
             </li>
             <li>
               <h3>2022</h3>
               <h2>12th (CBSE)</h2>
-              <h3>Carmel Convent Sr Sec School, Bhopal</h3>
-              <p>Percentage: 76%</p>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('education2')"
+              />
             </li>
             <li>
               <h3>2020</h3>
               <h2>10th (CBSE)</h2>
-              <h3>Carmel Convent Sr Sec School, Bhopal</h3>
-              <p>Percentage: 80%</p>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('education3')"
+              />
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- Technical Skills Section -->
+      <section class="section1">
+        <div class="sub-section1_1 experience">
+          <h2>Technical Skills</h2>
+          <ul>
+            <li>
+              <h3>Frontend Development</h3>
+              <p>React.js, HTML5, CSS3, JavaScript (ES6+)</p>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('skill1')"
+              />
+            </li>
+            <li>
+              <h3>Backend Development</h3>
+              <p>Node.js, Express.js, Python, PHP</p>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('skill2')"
+              />
+            </li>
+            <li>
+              <h3>Database Management</h3>
+              <p>MongoDB, MySQL, Azure SQL</p>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('skill3')"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="sub-section1_1 experience">
+          <h2>Key Projects</h2>
+          <ul>
+            <li>
+              <h3>Sankat Mochan - Hospital Management System</h3>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('project1')"
+              />
+            </li>
+            <li>
+              <h3>JPL PPL - Competitive Coding Platform</h3>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('project2')"
+              />
+            </li>
+            <li>
+              <h3>Rentify - Property Rental Platform</h3>
+              <img
+                class="expand-icon"
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="View Details"
+                onclick="openDetailModal('project3')"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="sub-section1_1 experience">
+          <h2>Achievements & Certifications</h2>
+          <ul>
+            <li>
+              <h3>Academic Projects</h3>
+              <p>10+ Web Applications | 5+ Live Deployed Projects</p>
+            </li>
+            <li>
+              <h3>Technical Proficiency</h3>
+              <p>15+ Technologies Mastered | 100+ GitHub Commits</p>
+            </li>
+            <li>
+              <h3>Client Satisfaction</h3>
+              <p>4.8/5 Average Rating | 99.9% Uptime</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section class="section2">
         <div class="sub-section2_3 box">
           <div class="social-icon">
-            <a href="https://www.instagram.com/yourusername" target="_blank">
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/yourusername"
+              target="_blank"
+              title="Instagram"
+            >
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://github.com/yourusername" target="_blank">
-              <i class="fa-brands fa-github"></i>
+            <a
+              href="https://twitter.com/yourusername"
+              target="_blank"
+              title="Twitter"
+            >
+              <i class="fa-brands fa-twitter"></i>
             </a>
           </div>
           <div class="logo_section">
             <div class="deatails-credenatild">
-              <h6>MORE ABOUT ME</h6>
-              <h4>CREDENTAILS</h4>
+              <h6>CONNECT WITH ME</h6>
+              <h4>SOCIAL PROFILES</h4>
             </div>
-            <img
-              decoding="async"
-              src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
-              alt="Star"
-            />
+            <a href="./Contactus.html">
+              <img
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="Star"
+              />
+            </a>
           </div>
         </div>
         <div class="sub-section3_2 box">
@@ -175,11 +516,13 @@
               <h1>work <span>together</span></h1>
             </div>
             <div class="logo_section card-arrow">
-              <img
-                decoding="async"
-                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
-                alt="Star"
-              />
+              <a href="./Contactus.html">
+                <img
+                  decoding="async"
+                  src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                  alt="Star"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -187,23 +530,453 @@
           <div class="image-credentails">
             <img
               src="https://www.nicepng.com/png/full/433-4335396_rain-png.png"
-              alt
+              alt="Resume"
             />
           </div>
           <div class="logo_section">
             <div class="deatails-credenatild">
-              <h6>MORE ABOUT ME</h6>
-              <h4>CREDENTAILS</h4>
+              <h6>DOWNLOAD MY</h6>
+              <h4>RESUME</h4>
             </div>
-            <img
-              decoding="async"
-              src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
-              alt="Star"
-            />
+            <a href="./assests/resume.pdf" download>
+              <img
+                decoding="async"
+                src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg"
+                alt="Star"
+              />
+            </a>
           </div>
         </div>
       </section>
     </main>
-       <script src="./script.js"></script>
+
+    <!-- Detail Modals -->
+
+    <!-- Internship 1 Modal -->
+    <div id="internship1" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('internship1')"
+          >&times;</span
+        >
+        <h3>Sept 2024 – Oct 2024</h3>
+        <h2>Data Engineering Intern</h2>
+        <h3>BSY Consulting</h3>
+        <p>
+          Worked on data pipeline development, ETL processes, and database
+          optimization using Python, SQL, and Azure. Implemented data analytics
+          solutions and automated reporting systems.
+        </p>
+        <p><strong>Key Responsibilities:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Developed and maintained data pipelines for ETL processes</li>
+          <li>Optimized database queries for improved performance</li>
+          <li>Created automated reporting systems using Python</li>
+          <li>Worked with Azure SQL for cloud-based data management</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Internship 2 Modal -->
+    <div id="internship2" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('internship2')"
+          >&times;</span
+        >
+        <h3>Nov 2024 – Dec 2024</h3>
+        <h2>Web Development Intern</h2>
+        <h3>BSY Consulting</h3>
+        <p>
+          Developed full-stack web applications using MERN stack. Built RESTful
+          APIs, integrated third-party services, and implemented responsive
+          frontend designs with React and Material-UI.
+        </p>
+        <p><strong>Key Responsibilities:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>
+            Built full-stack applications using React, Node.js, Express, and
+            MongoDB
+          </li>
+          <li>Developed RESTful APIs for various client projects</li>
+          <li>
+            Integrated third-party payment gateways and authentication services
+          </li>
+          <li>
+            Implemented responsive designs using Material-UI and Tailwind CSS
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Internship 3 Modal -->
+    <div id="internship3" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('internship3')"
+          >&times;</span
+        >
+        <h3>Jul 2025 - Oct 2025</h3>
+        <h2>Software Development Engineer</h2>
+        <h3>HLtech India</h3>
+        <p>
+          Worked on developing enterprise-level software solutions using modern web technologies.
+          Built scalable applications, implemented complex features, and collaborated with
+          cross-functional teams.
+        </p>
+        <p><strong>Key Responsibilities:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Developed full-stack applications using MERN stack</li>
+          <li>Implemented RESTful APIs and microservices architecture</li>
+          <li>Collaborated with product and design teams</li>
+          <li>Optimized application performance and scalability</li>
+          <li>Participated in code reviews and agile development processes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Freelance 1 Modal -->
+    <div id="freelance1" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('freelance1')"
+          >&times;</span
+        >
+        <h3>February 2024</h3>
+        <h2>Full Stack E-Commerce Developer - Asual</h2>
+        <h3>Freelance Project</h3>
+        <p>
+          Built complete e-commerce platform for a fashion brand using HTML,
+          CSS, JavaScript, Node.js, and Express. Integrated Stripe payment
+          gateway, shopping cart functionality, and order management system.
+        </p>
+        <p>
+          <strong>Technologies Used:</strong> HTML5, CSS3, JavaScript, Node.js,
+          Express, MongoDB, Stripe
+        </p>
+        <p><strong>Key Achievements:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Successfully processed 500+ orders in first quarter</li>
+          <li>Implemented secure payment gateway integration</li>
+          <li>Built admin panel for inventory management</li>
+          <li>Achieved 99% customer satisfaction rate</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Freelance 2 Modal -->
+    <div id="freelance2" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('freelance2')"
+          >&times;</span
+        >
+        <h3>March 2025</h3>
+        <h2>MERN Stack Developer - Zenaura (Crystal & Cannel)</h2>
+        <h3>Freelance Project</h3>
+        <p>
+          Developed premium e-commerce platform using MERN stack for luxury
+          brand. Implemented Google OAuth authentication, Razorpay payment
+          integration, advanced product filtering, wishlist functionality, and
+          real-time inventory tracking.
+        </p>
+        <p>
+          <strong>Technologies Used:</strong> React, Node.js, MongoDB, Express,
+          Google OAuth, Razorpay, Material-UI, AWS S3
+        </p>
+        <p><strong>Key Achievements:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Achieved 99.9% uptime</li>
+          <li>4.8/5 customer satisfaction rating</li>
+          <li>Real-time inventory tracking system</li>
+          <li>Advanced product filtering and search functionality</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Freelance 3 Modal -->
+    <div id="freelance3" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('freelance3')"
+          >&times;</span
+        >
+        <h3>Aug 2024 - Ongoing</h3>
+        <h2>Full Stack Developer - The Gypsy Adventures</h2>
+        <h3>Freelance Project</h3>
+        <p>
+          Built comprehensive tourism booking platform with tour packages, hotel
+          integration, multi-step booking forms, admin dashboard, and payment
+          gateway.
+        </p>
+        <p>
+          <strong>Technologies Used:</strong> React, Node.js, Express, MongoDB,
+          Material-UI, Tailwind CSS, Razorpay
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Tour package browsing and booking system</li>
+          <li>Hotel booking integration with external APIs</li>
+          <li>Multi-step booking forms with validation</li>
+          <li>Admin dashboard for content management</li>
+          <li>Currently serving 100+ active users</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education 1 Modal - B.Tech -->
+    <div id="education1" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('education1')"
+          >&times;</span
+        >
+        <h3>2022 - 2026</h3>
+        <h2>B.Tech in Computer Science & Engineering</h2>
+        <h3>SISTec-R, Bhopal</h3>
+        <p><strong>CGPA: 7.74 / 10</strong></p>
+        <p><strong>Relevant Coursework:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Data Structures and Algorithms</li>
+          <li>Database Management Systems</li>
+          <li>Web Technologies</li>
+          <li>Software Engineering</li>
+          <li>Cloud Computing</li>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+          <li>Artificial Intelligence</li>
+          <li>Machine Learning</li>
+        </ul>
+        <p><strong>Achievements:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Built 10+ web applications as part of coursework</li>
+          <li>Participated in multiple hackathons and coding competitions</li>
+          <li>Completed 3+ major projects with live deployment</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education 2 Modal - 12th -->
+    <div id="education2" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('education2')"
+          >&times;</span
+        >
+        <h3>2022</h3>
+        <h2>12th Standard (CBSE)</h2>
+        <h3>Carmel Convent Sr Sec School, Bhopal</h3>
+        <p><strong>Percentage: 76%</strong></p>
+        <p><strong>Stream: Science (PCM)</strong></p>
+        <p><strong>Subjects:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Physics</li>
+          <li>Chemistry</li>
+          <li>Mathematics</li>
+          <li>English</li>
+          <li>Computer Science</li>
+        </ul>
+        <p><strong>Achievements:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Developed interest in programming and computer science</li>
+          <li>Participated in school science exhibitions</li>
+          <li>Strong foundation in mathematics and logical reasoning</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education 3 Modal - 10th -->
+    <div id="education3" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('education3')"
+          >&times;</span
+        >
+        <h3>2020</h3>
+        <h2>10th Standard (CBSE)</h2>
+        <h3>Carmel Convent Sr Sec School, Bhopal</h3>
+        <p><strong>Percentage: 80%</strong></p>
+        <p><strong>Subjects:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Mathematics</li>
+          <li>Science (Physics, Chemistry, Biology)</li>
+          <li>English</li>
+          <li>Hindi</li>
+          <li>Social Science</li>
+          <li>Information Technology</li>
+        </ul>
+        <p><strong>Achievements:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Excellent performance in Mathematics and Science</li>
+          <li>Basic introduction to programming concepts</li>
+          <li>Developed problem-solving and analytical skills</li>
+          <li>Active participant in school competitions</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Skill Modals -->
+    <div id="skill1" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('skill1')"
+          >&times;</span
+        >
+        <h2>Frontend Development</h2>
+        <p><strong>Core Technologies:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>React.js - Component-based architecture, Hooks, Context API</li>
+          <li>HTML5 - Semantic markup, Accessibility</li>
+          <li>CSS3 - Flexbox, Grid, Animations</li>
+          <li>JavaScript (ES6+) - Async/Await, Promises, Arrow Functions</li>
+          <li>Material-UI - Component library</li>
+          <li>Tailwind CSS - Utility-first CSS framework</li>
+          <li>Responsive Design - Mobile-first approach</li>
+          <li>Vite - Build tool and dev server</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="skill2" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('skill2')"
+          >&times;</span
+        >
+        <h2>Backend Development</h2>
+        <p><strong>Core Technologies:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Node.js - Server-side JavaScript runtime</li>
+          <li>Express.js - Web application framework</li>
+          <li>Python - Data processing and automation</li>
+          <li>PHP - Server-side scripting</li>
+          <li>RESTful APIs - API design and development</li>
+          <li>JWT Authentication - Secure user authentication</li>
+          <li>WebSocket - Real-time communication</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="skill3" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('skill3')"
+          >&times;</span
+        >
+        <h2>Database Management</h2>
+        <p><strong>Core Technologies:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>MongoDB - NoSQL database, Aggregation pipelines</li>
+          <li>MySQL - Relational database, Complex queries</li>
+          <li>Azure SQL - Cloud-based SQL database</li>
+          <li>Database Design - Schema design, Normalization</li>
+          <li>Query Optimization - Performance tuning</li>
+          <li>Data Modeling - Entity-relationship diagrams</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project Modals -->
+    <div id="project1" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('project1')"
+          >&times;</span
+        >
+        <h2>Sankat Mochan - Hospital Management System</h2>
+        <p>
+          Comprehensive HMS with real-time queue management, bed allocation,
+          pharmacy operations, AI-powered report generation, and 24×7 chatbot
+          support.
+        </p>
+        <p>
+          <strong>Technologies:</strong> React, Node.js, MongoDB, Express,
+          Python, AI/ML, WebSocket
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Real-time queue management system</li>
+          <li>Intelligent bed allocation</li>
+          <li>Pharmacy inventory management</li>
+          <li>AI-powered medical report analysis</li>
+          <li>24×7 chatbot for patient queries</li>
+          <li>Patient-doctor coordination dashboard</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="project2" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('project2')"
+          >&times;</span
+        >
+        <h2>JPL PPL - Competitive Coding Platform</h2>
+        <p>
+          Dynamic platform with participant registration, real-time quizzes,
+          Monaco Editor integration, and AI chatbot. Handled 200+ concurrent
+          users.
+        </p>
+        <p>
+          <strong>Technologies:</strong> React, Node.js, MongoDB, Express,
+          Monaco Editor, Python, REST API
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Participant registration system</li>
+          <li>Real-time quiz interface</li>
+          <li>Monaco Editor for live code compilation</li>
+          <li>Automated result tracking</li>
+          <li>24×7 AI chatbot support</li>
+          <li>Successfully handled 200+ concurrent users</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="project3" class="detail-modal">
+      <div class="detail-modal-content">
+        <span class="detail-close" onclick="closeDetailModal('project3')"
+          >&times;</span
+        >
+        <h2>Rentify - Property Rental Platform</h2>
+        <p>
+          Real estate marketplace with property listings, Google Maps
+          integration, payment gateway, user verification, and rating system.
+        </p>
+        <p>
+          <strong>Technologies:</strong> React, Node.js, MongoDB, Express,
+          Google Maps API, Razorpay, JWT
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul style="color: #aaa; line-height: 1.8">
+          <li>Advanced property listing management</li>
+          <li>Location-based search with Google Maps</li>
+          <li>Property comparison tool</li>
+          <li>Secure payment gateway integration</li>
+          <li>User verification system</li>
+          <li>Rating and review functionality</li>
+          <li>Separate dashboards for landlords and tenants</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // Detail Modal Functions
+      function openDetailModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeDetailModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function (event) {
+        if (event.target.classList.contains("detail-modal")) {
+          event.target.style.display = "none";
+          document.body.style.overflow = "auto";
+        }
+      };
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          const modals = document.querySelectorAll(".detail-modal");
+          modals.forEach((modal) => {
+            modal.style.display = "none";
+          });
+          document.body.style.overflow = "auto";
+        }
+      });
+    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

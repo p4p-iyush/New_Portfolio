@@ -1,111 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Info</title>
-    <link rel="stylesheet" href="Contactus.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#5B78F6",
+              "primary-dark": "#3A56C9",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.5s ease forwards;
+        opacity: 0;
+      }
+      .delay-100 {
+        animation-delay: 0.1s;
+      }
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      .delay-300 {
+        animation-delay: 0.3s;
+      }
+      .delay-400 {
+        animation-delay: 0.4s;
+      }
+    </style>
   </head>
   <body>
-   <nav>
-        <section class="logo">
-            <img src="./assests/Logo.png" alt="Company Logo">
-        </section>
-        
-        <section class="nav-links">
-            <a href="./index.html"><li>Home</li></a>
-            <a href="./about-us.html"><li>About</li></a>
-            <a href="work.html"><li>Works</li></a>
-            <a href="Certificates.html"><li>Certificates</li></a>
-            <a href="Contactus.html"><li>Contact</li></a>
-        </section>
-        
-        <section class="talk-btn">
-            <a href="chatbot.html">CHATBOT</a>
-        </section>
-        
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
+    <nav>
+      <section class="logo">
+        <img src="./assests/photo.jpg" alt="Company Logo" />
+      </section>
+
+      <section class="nav-links">
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./about-us.html"><li>About</li></a>
+        <a href="work.html"><li>Works</li></a>
+        <a href="Certificates.html"><li>Certificates</li></a>
+        <a href="Contactus.html"><li>Contact</li></a>
+      </section>
+
+      <section class="talk-btn">
+        <a href="chatbot.html">CHATBOT</a>
+      </section>
+
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
-    <div class="container">
+
+    <!-- Main Container -->
+    <div
+      class="flex flex-wrap lg:flex-nowrap justify-center items-center bg-black text-white min-h-screen p-8 sm:p-6 xs:p-4 lg:gap-12"
+    >
       <!-- Contact Info Section -->
-      <div class="contact-info">
-        <h2>CONTACT INFO</h2>
+      <div
+        class="flex flex-col gap-8 w-full max-w-md lg:max-w-sm lg:w-[35%] p-8 sm:p-4 animate-fade-in-up delay-100"
+      >
+        <h2 class="text-2xl font-bold">CONTACT INFO</h2>
+
         <!-- Mail Us -->
-        <div class="info-item">
-          <span class="box"><i class="fas fa-envelope "></i></span>
-          <div class="info-content">
-            <h3>MAIL US</h3>
-            <p>info@bluebase.com</p>
-            <p>info@bluebase2.com</p>
+        <div class="flex flex-col sm:flex-row gap-6 sm:gap-4 items-start">
+          <span
+            class="flex w-[70px] h-[70px] sm:w-[60px] sm:h-[60px] xs:w-[50px] xs:h-[50px] justify-center items-center rounded-[20px] bg-primary/10"
+          >
+            <i class="fas fa-envelope text-3xl sm:text-2xl text-primary"></i>
+          </span>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl text-white font-semibold">MAIL US</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              <a href="mailto:jain4piyush@gmail.com">jain4piyush@gmail.com</a>
+            </p>
           </div>
         </div>
+
         <!-- Contact Us -->
-        <div class="info-item">
-          <span class="box"><i class="fas fa-phone "></i></span>
-          <div class="info-content">
-            <h3>CONTACT US</h3>
-            <p>+1504-899-8221</p>
-            <p>+1504-749-5456</p>
+        <div
+          class="flex flex-col sm:flex-row gap-6 sm:gap-4 items-start animate-fade-in-up delay-200"
+        >
+          <span
+            class="flex w-[70px] h-[70px] sm:w-[60px] sm:h-[60px] xs:w-[50px] xs:h-[50px] justify-center items-center rounded-[20px] bg-primary/10"
+          >
+            <i class="fas fa-phone text-3xl sm:text-2xl text-primary"></i>
+          </span>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl text-white font-semibold">CONTACT US</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              +91 975 386 8553
+            </p>
+            <!-- <p class="text-gray-400 text-sm leading-relaxed">+1504-749-5456</p> -->
           </div>
         </div>
+
         <!-- Location -->
-        <div class="info-item">
-          <span class="box"><i class="fas fa-map-marker-alt "></i></span>
-          <div class="info-content">
-            <h3>LOCATION</h3>
-            <p>22 Baker Street, Texas</p>
-            <p>United States</p>
-            <p>W1U 3BW</p>
+        <div
+          class="flex flex-col sm:flex-row gap-6 sm:gap-4 items-start animate-fade-in-up delay-300"
+        >
+          <span
+            class="flex w-[70px] h-[70px] sm:w-[60px] sm:h-[60px] xs:w-[50px] xs:h-[50px] justify-center items-center rounded-[20px] bg-primary/10"
+          >
+            <i
+              class="fas fa-map-marker-alt text-3xl sm:text-2xl text-primary"
+            ></i>
+          </span>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl text-white font-semibold">LOCATION</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">BHOPAL,</p>
+            <p class="text-gray-400 text-sm leading-relaxed">MADHYA PRADESH INDIA</p>
           </div>
         </div>
+
         <!-- Social Info -->
         <div class="social-info">
-          <h3>SOCIAL INFO</h3>
-          <div class="social-links">
-            <a href="#"><span><i class="fab fa-dribbble"></i></span></a>
-            <a href="#"><span><i class="fab fa-twitter"></i></span></a>
-            <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+          <h3 class="text-xl text-white font-semibold mb-4">SOCIAL INFO</h3>
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="flex w-12 h-12 justify-center items-center rounded-full bg-primary/10 hover:bg-primary/20 transition-all duration-300"
+            >
+              <i class="fab fa-dribbble text-primary"></i>
+            </a>
+            <a
+              href="#"
+              class="flex w-12 h-12 justify-center items-center rounded-full bg-primary/10 hover:bg-primary/20 transition-all duration-300"
+            >
+              <i class="fab fa-twitter text-primary"></i>
+            </a>
+            <a
+              href="#"
+              class="flex w-12 h-12 justify-center items-center rounded-full bg-primary/10 hover:bg-primary/20 transition-all duration-300"
+            >
+              <i class="fab fa-instagram text-primary"></i>
+            </a>
           </div>
         </div>
       </div>
 
       <!-- Contact Form Section -->
-      <div class="contact-form">
-        <div class=" box">
-          <div class="contact-us-img">
-            <img decoding="async"
-              src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
-              alt="Star" class="star-icon">
-          </div>
-          <div class="join_us_arrow">
-            <div class="join_us">
-              <h1>Let's work <span>together</span></h1>
-            </div>
-          </div>
-          <form>
-            <!-- Name -->
-            <input class="box" type="text" placeholder="Name *" required>
-            <!-- Email -->
-            <input class="box" type="email" placeholder="Email *" required>
-            <!-- Subject -->
-            <input class="box" type="text" placeholder="Your Subject *"
-              required>
-            <!-- Message -->
-            <textarea class="box" placeholder="Your Message *"
-              required></textarea>
-            <!-- Submit Button -->
-            <button class="box" type="submit">Send Message</button>
-          </form>
+      <div
+        class="box flex flex-col w-full max-w-2xl lg:w-[100%] p-8 sm:p-4 animate-fade-in-up delay-400"
+      >
+        <div
+          class="contact-us-img hidden lg:flex lg:w-[10%] justify-end items-center mb-4"
+        >
+          <img
+            decoding="async"
+            src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
+            alt="Star"
+            class="star-icon"
+          />
         </div>
 
+        <div class="mb-6">
+          <h1 class="text-4xl sm:text-3xl font-bold">
+            Let's work <span class="text-primary">together</span>
+          </h1>
+        </div>
+
+        <form class="flex flex-col gap-6">
+          <!-- Name -->
+          <input
+            type="text"
+            placeholder="Name *"
+            required
+            class="p-4 sm:p-3 text-base border-none rounded-2xl sm:rounded-xl bg-white/5 text-white outline-none transition-all duration-300 border border-white/10 focus:bg-white/10 focus:border-primary focus:shadow-[0_0_0_2px_rgba(91,120,246,0.2)]"
+          />
+
+          <!-- Email -->
+          <input
+            type="email"
+            placeholder="Email *"
+            required
+            class="p-4 sm:p-3 text-base border-none rounded-2xl sm:rounded-xl bg-white/5 text-white outline-none transition-all duration-300 border border-white/10 focus:bg-white/10 focus:border-primary focus:shadow-[0_0_0_2px_rgba(91,120,246,0.2)]"
+          />
+
+          <!-- Subject -->
+          <input
+            type="text"
+            placeholder="Your Subject *"
+            required
+            class="p-4 sm:p-3 text-base border-none rounded-2xl sm:rounded-xl bg-white/5 text-white outline-none transition-all duration-300 border border-white/10 focus:bg-white/10 focus:border-primary focus:shadow-[0_0_0_2px_rgba(91,120,246,0.2)]"
+          />
+
+          <!-- Message -->
+          <textarea
+            placeholder="Your Message *"
+            required
+            class="p-4 sm:p-3 text-base border-none rounded-2xl sm:rounded-xl bg-white/5 text-white outline-none transition-all duration-300 border border-white/10 min-h-[180px] resize-y focus:bg-white/10 focus:border-primary focus:shadow-[0_0_0_2px_rgba(91,120,246,0.2)]"
+          ></textarea>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full sm:w-auto px-8 py-4 sm:py-3 text-base font-medium bg-gradient-to-r from-primary to-primary-dark border-none rounded-full text-white cursor-pointer transition-all duration-300 self-start shadow-[0_4px_15px_rgba(91,120,246,0.3)] hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(91,120,246,0.4)] sm:text-center"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </div>
-       <script src="./script.js"></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>

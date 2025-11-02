@@ -27,10 +27,11 @@ nav {
 
 .logo img {
   height: 50px;
-  width: auto;
+  width: 50px;
   border-radius: 50%;
-  background-color: #fff;
-  padding: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
 }
 
 .nav-links {
@@ -182,6 +183,7 @@ nav {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 10px;
 }
 main section {
   width: 80vw;
