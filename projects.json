@@ -1,94 +1,296 @@
 {
   "projects": [
     {
-      "id": "jpl-ppl",
-      "title": "JPL PPL (Coding Competition Platform)",
+      "id": "police-mis",
+      "title": "Police MIS Dashboard System",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Developed a comprehensive competitive coding platform for JPL-PPL event at SISTec-R. Features include participant registration system, real-time quiz interface with integrated Monaco Editor for live code compilation, automated result tracking, and 24×7 AI chatbot support for participant assistance. The platform successfully handled 200+ concurrent users during the event.",
-      "technologies": ["React", "Node.js", "MongoDB", "Express", "Monaco Editor", "Python", "REST API"],
-      "date": "May 2025",
-      "link": "https://example.com/jpl-ppl"
+      "category": "College Project",
+      "description": "Design, develop, test, and debug management system handling 200+ data records with evidence logging and mapping functionality. Applied analytical thinking to explore crime data patterns for reporting and research purposes. Conduct research and learning for AI-driven predictive modeling using emerging technologies and structured analytical approaches.",
+      "technologies": ["HTML5", "CSS3", "PHP", "MySQL", "Bootstrap", "Chart.js"],
+      "features": [
+        "Evidence logging and tracking",
+        "Crime data pattern analysis",
+        "Interactive mapping functionality",
+        "Report generation system",
+        "200+ data records management"
+      ],
+      "date": "January 2024",
+      "github": "",
+      "live": ""
     },
     {
       "id": "sankat-mochan",
-      "title": "Sankat Mochan – Hospital Management System",
+      "title": "Sankat Mochan Healthcare Portal",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Built a comprehensive Hospital Management System to digitize healthcare operations. Features real-time queue management, intelligent bed allocation system, pharmacy inventory management, patient-doctor coordination dashboard, AI-powered medical report analysis and generation, and 24×7 chatbot support. Designed to improve hospital efficiency and patient experience with role-based access for administrators, doctors, and patients.",
+      "category": "College Project",
+      "description": "Collaborate with cross-functional development teams to design and develop hospital management software with AI chatbot integration. Applied engineering and analytical skills for responsive design; improved workflow efficiency by 40% through RESTful API development. Features real-time queue management, intelligent bed allocation, pharmacy inventory, and patient-doctor coordination.",
       "technologies": ["React", "Node.js", "MongoDB", "Express", "Python", "AI/ML", "WebSocket"],
+      "features": [
+        "Real-time queue management system",
+        "Intelligent bed allocation",
+        "Pharmacy inventory management",
+        "AI-powered medical report analysis",
+        "24×7 chatbot for patient queries",
+        "Patient-doctor coordination dashboard"
+      ],
       "date": "March 2025",
-      "link": "https://example.com/sankat-mochan"
+      "github": "",
+      "live": ""
     },
     {
-      "id": "collab-notes",
-      "title": "Collaborative Notes Editor",
+      "id": "jpl-ppl",
+      "title": "JPL/PPL Programming Platform",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Created a versatile note-taking application with dual-access functionality. Users can create public notes (accessible without authentication) for sharing information or private notes (requires secure login) for personal use. Features include rich text editing, note categorization, search functionality, and responsive design for seamless cross-device experience.",
-      "technologies": ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "MongoDB", "JWT Authentication"],
-      "date": "December 2024",
-      "link": "https://example.com/collab-notes"
-    },
-    {
-      "id": "ai-chatbot",
-      "title": "AI-Powered Portfolio Chatbot",
-      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Developed an intelligent AI chatbot integrated into my portfolio website that acts as a virtual assistant. The bot is trained on my profile data and can answer visitor queries about my skills, projects, experience, and availability. Uses natural language processing to provide human-like responses and enhance user engagement by 300%.",
-      "technologies": ["Python", "LLM (Large Language Model)", "Flask", "HTML5", "CSS3", "JavaScript", "NLP"],
-      "date": "January 2025",
-      "link": "https://example.com/ai-chatbot"
-    },
-    {
-      "id": "portfolio-2",
-      "title": "Personal Portfolio v2.0",
-      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Redesigned personal portfolio with modern UI/UX principles, featuring smooth animations, interactive project showcases, skills visualization, and responsive design. Implemented dark/light theme toggle, lazy loading for optimized performance, and SEO optimization for better discoverability. Achieved 95+ Google Lighthouse score.",
-      "technologies": ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "GSAP Animations"],
-      "date": "January 2025",
-      "link": "https://example.com/portfolio-2"
-    },
-    {
-      "id": "police-mis",
-      "title": "Police MIS – Bhopal Division",
-      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Designed and implemented a Management Information System to connect 50+ police stations across Bhopal for centralized operations. Key features include live case tracking and status updates, officer leave management system, personnel transfer module, centralized case database with advanced search, report generation, and inter-station communication tools. Improved operational efficiency by 40%.",
-      "technologies": ["HTML5", "CSS3", "PHP", "MySQL", "Bootstrap", "Chart.js"],
-      "date": "January 2024",
-      "link": "https://example.com/police-mis"
-    },
-    {
-      "id": "rentify",
-      "title": "Rentify – Property Rental Platform",
-      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Built a full-stack real estate rental marketplace connecting property owners with potential tenants. Features include advanced property listing management, location-based search with Google Maps integration, property comparison tool, secure payment gateway integration, user verification system, rating and review functionality, and separate dashboards for landlords and tenants with role-based access control.",
-      "technologies": ["React", "Node.js", "MongoDB", "Express", "Google Maps API", "Razorpay", "JWT"],
-      "date": "October 2024",
-      "link": "https://example.com/rentify"
+      "category": "College Project",
+      "description": "Developed comprehensive software solution with React.js and Node.js following software engineering principles and coding standards. Analyze technical problems and propose creative solutions; achieved latency reduction serving 400+ concurrent users. Features include participant registration system, real-time quiz interface with Monaco Editor for live code compilation, automated result tracking, and AI chatbot support.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Monaco Editor", "Python", "REST API"],
+      "features": [
+        "Participant registration system",
+        "Real-time quiz interface",
+        "Monaco Editor for live code compilation",
+        "Automated result tracking",
+        "24×7 AI chatbot support",
+        "400+ concurrent users handling"
+      ],
+      "date": "May 2025",
+      "github": "",
+      "live": ""
     },
     {
       "id": "asual-ecommerce",
-      "title": "Asual – Fashion E-commerce Platform (Freelance)",
+      "title": "Asusual.in - E-commerce Platform",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Freelance project for a clothing brand startup. Developed a complete e-commerce solution with product catalog, smart filtering and sorting, shopping cart with persistent sessions, secure checkout process, payment gateway integration, order tracking system, admin panel for inventory management, and responsive design for mobile commerce. Successfully processed 500+ orders in first quarter.",
-      "technologies": ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "MongoDB", "Stripe", "Bootstrap"],
+      "category": "Freelancing",
+      "description": "Design, develop, test, and debug scalable full-stack software solution meeting business requirements. Applied best practices and coding standards achieving 80+ Lighthouse score; implemented comprehensive testing protocols. Developed a complete e-commerce solution with product catalog, smart filtering, shopping cart, secure checkout, and admin panel.",
+      "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe", "Tailwind CSS"],
+      "features": [
+        "Secure payment gateway integration (Stripe)",
+        "Shopping cart and order management",
+        "Admin panel for inventory management",
+        "Responsive design for all devices",
+        "Product catalog with smart filtering",
+        "Order tracking system"
+      ],
       "date": "February 2024",
-      "link": "https://example.com/asual"
+      "github": "",
+      "live": "https://asusual.in"
     },
     {
       "id": "zenaura-ecommerce",
-      "title": "Crystal & Cannel by Zenaura – Luxury E-commerce (Freelance)",
+      "title": "Zenaura.in - Crystal & Cannel Store",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Developed a premium MERN stack e-commerce platform for Zenaura's luxury brand 'Crystal & Cannel'. Features include Google OAuth integration for seamless login, secure payment processing with Razorpay, advanced product filtering, wishlist functionality, order management dashboard, real-time inventory tracking, email notifications, and elegant UI/UX with high-quality product galleries. Achieved 99.9% uptime and 4.8/5 customer satisfaction.",
+      "category": "Freelancing",
+      "description": "Developed premium e-commerce platform for luxury crystal and cannel products with advanced features including product filtering, wishlist, and real-time inventory tracking. Implemented Google OAuth authentication, Razorpay payment integration, and optimized for high performance.",
       "technologies": ["React", "Node.js", "MongoDB", "Express", "Google OAuth", "Razorpay", "Material-UI", "AWS S3"],
+      "features": [
+        "Real-time inventory tracking system",
+        "Advanced product filtering and search",
+        "Google OAuth authentication",
+        "Wishlist functionality",
+        "Order management dashboard",
+        "Email notifications"
+      ],
       "date": "March 2025",
-      "link": "https://example.com/zenaura"
+      "github": "",
+      "live": "https://zenaura.in"
     },
     {
       "id": "tga-tourism",
-      "title": "The Gypsy Adventures – Tourism Platform",
+      "title": "The Gypsy Adventures - Tourism Platform",
       "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
-      "description": "Full-stack tourism and travel booking platform featuring tour package browsing, hotel booking integration with external APIs, multi-step booking forms with validation, payment gateway integration, admin dashboard for content management, user authentication and profile management, testimonials and reviews section, and responsive design with image optimization. Currently serving 100+ active users.",
-      "technologies": ["React", "Node.js", "Express", "MongoDB", "Material-UI", "Tailwind CSS", "REST API", "Razorpay"],
-      "date": "September 2024",
-      "link": "https://example.com/tga"
+      "category": "Internship",
+      "description": "Developed and maintained backend architecture for The Gypsy Adventures, implementing RESTful APIs, admin panel features, and data management modules. Collaborated with frontend developers to build and optimize multiple React pages; improved website load speed by 30% through SEO enhancement and performance tuning. Contributed to TGA Storage, a media optimization module for compressing and storing images and videos efficiently, reducing server storage usage and load times.",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Razorpay", "Tailwind CSS", "PostgreSQL"],
+      "features": [
+        "Tour package browsing and booking system",
+        "Hotel booking integration with external APIs",
+        "Multi-step booking forms with validation",
+        "Media optimization module (TGA Storage)",
+        "Admin dashboard for content management",
+        "User authentication and profile management"
+      ],
+      "date": "September 2024 - Present",
+      "github": "",
+      "live": "https://thegypsyadventures.com"
+    },
+    {
+      "id": "bsy-website",
+      "title": "BSY Consulting Website",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Internship",
+      "description": "Developed full-stack web applications using MERN stack during internship at BSY Consulting. Built RESTful APIs, integrated third-party services, and implemented responsive frontend designs with React and Material-UI. Successfully delivered 3 client projects with 98% client satisfaction.",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Material-UI", "REST API"],
+      "features": [
+        "Responsive web design",
+        "RESTful API development",
+        "Third-party service integration",
+        "Client dashboard development"
+      ],
+      "date": "November 2024 - December 2024",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": "gaming-platform",
+      "title": "Gaming Platform",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Personal Project",
+      "description": "Multiplayer gaming platform with real-time interactions. Built using WebSocket for real-time communication, React for frontend, and Node.js for backend server. Features include real-time game state synchronization, player matchmaking, and leaderboard system.",
+      "technologies": ["React", "Node.js", "WebSocket", "Express", "MongoDB"],
+      "features": [
+        "Real-time game state synchronization",
+        "Player matchmaking system",
+        "Leaderboard and scoring",
+        "Multiplayer support"
+      ],
+      "date": "2024",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": "portfolio-v3",
+      "title": "Personal Portfolio v3.0",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Personal Project",
+      "description": "Modern portfolio website showcasing projects, skills, and experience. Features include dark/light theme toggle, smooth animations, interactive project showcases, skills visualization, and responsive design. Optimized for performance with lazy loading and SEO best practices.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "GSAP Animations"],
+      "features": [
+        "Dark/light theme toggle",
+        "Smooth animations with GSAP",
+        "Interactive project showcase",
+        "Skills visualization",
+        "Responsive design",
+        "SEO optimized"
+      ],
+      "date": "January 2025",
+      "github": "https://github.com/jain4piyush/portfolio",
+      "live": ""
+    },
+    {
+      "id": "notepad-app",
+      "title": "Notepad for Writing Notes & Code",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Personal Project",
+      "description": "Note-taking application with code highlighting support. Features include rich text editing, code syntax highlighting, local storage persistence, note categorization, and search functionality. Supports both plain text and code snippets with language-specific highlighting.",
+      "technologies": ["React", "LocalStorage", "Prism.js", "CSS3"],
+      "features": [
+        "Rich text editing",
+        "Code syntax highlighting",
+        "Local storage persistence",
+        "Note categorization",
+        "Search functionality"
+      ],
+      "date": "2024",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": "denoise-audio",
+      "title": "Denoise The Audio",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Personal Project",
+      "description": "Audio denoising application using signal processing techniques. Built with Python using libraries like NumPy, SciPy, and Librosa for audio processing. Implements various noise reduction algorithms including spectral gating and wavelet denoising.",
+      "technologies": ["Python", "NumPy", "SciPy", "Librosa", "SoundDevice"],
+      "features": [
+        "Real-time audio processing",
+        "Multiple noise reduction algorithms",
+        "Waveform visualization",
+        "Audio file import/export"
+      ],
+      "date": "2024",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": "insurance-dashboard",
+      "title": "Insurance Premium & Payout KPI Analytics Dashboard",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Data Analytics",
+      "description": "Developed an interactive Power BI dashboard to analyze insurance premium collections and payout performance across multiple KPIs. Tracked key metrics such as claim ratio, premium growth, and payout trends to generate actionable business insights. Cleaned and transformed raw datasets using Excel and Power Query to ensure accurate and consistent reporting.",
+      "technologies": ["Power BI", "Excel", "Power Query", "DAX"],
+      "features": [
+        "Claim ratio tracking",
+        "Premium growth analysis",
+        "Payout trends visualization",
+        "Interactive filters and slicers",
+        "KPI monitoring dashboard"
+      ],
+      "date": "2024",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": "ecommerce-mis",
+      "title": "E-Commerce MIS Reporting & Capacity Tracker",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Data Analytics",
+      "description": "Created daily and monthly MIS reports using Excel Pivot Tables and formulas to track orders, payments, and delivery. Tracked KPIs and business metrics aligned with intraday and intraweek operational trends. Improved data accuracy through validation checks and standardized reporting formats, reducing manual errors.",
+      "technologies": ["Advanced Excel", "Pivot Tables", "VLOOKUP/XLOOKUP", "Power Query"],
+      "features": [
+        "Revenue analysis and tracking",
+        "Return rates monitoring",
+        "Coupon usage analytics",
+        "Category performance reports",
+        "Automated reporting system"
+      ],
+      "date": "2024",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": "weather-pipeline",
+      "title": "Weather Data Pipeline using API",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Data Analytics",
+      "description": "Built an end-to-end automated data pipeline extracting real-time data from OpenWeatherMap API, demonstrating pipeline design and live monitoring skills. Transformed raw JSON into structured format using Pandas and stored in PostgreSQL for analysis and reporting.",
+      "technologies": ["Python", "Pandas", "PostgreSQL", "REST API", "JSON"],
+      "features": [
+        "Real-time weather data extraction",
+        "Automated ETL pipeline",
+        "Data transformation with Pandas",
+        "PostgreSQL database storage",
+        "Scheduled data updates"
+      ],
+      "date": "2024",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": "customer-trends",
+      "title": "Customer Trends & Sales Analysis",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "Data Analytics",
+      "description": "Analyzed customer transaction and sales data using SQL joins, aggregations, and KPIs. Performed data cleaning and exploratory data analysis (EDA) using Python (Pandas). Built interactive Power BI dashboards to visualize revenue trends, customer segmentation, and product performance. Delivered insights on repeat customers, regional sales patterns, and category-wise growth.",
+      "technologies": ["Python", "Pandas", "SQL", "Power BI", "EDA"],
+      "features": [
+        "Revenue trend analysis",
+        "Customer segmentation",
+        "Product performance tracking",
+        "Regional sales patterns",
+        "Repeat customer analysis"
+      ],
+      "date": "2024",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": "cloud-banking",
+      "title": "Cloud Banking Application (Flask + AWS)",
+      "image": "https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/project2.jpeg",
+      "category": "AWS Training",
+      "description": "Built secure cloud-based banking system using Python Flask, AWS EC2, and DynamoDB for scalable account management and transaction processing. Implemented secure authentication with password hashing, session management, and transaction validation. Developed features including deposits, withdrawals, transfers, and transaction history tracking with optimized database queries. Designed scalable architecture separating presentation, business logic, and data layers for improved maintainability.",
+      "technologies": ["Python", "Flask", "AWS EC2", "DynamoDB", "Boto3", "HTML/CSS"],
+      "features": [
+        "Secure authentication with password hashing",
+        "Deposit and withdrawal functionality",
+        "Fund transfers between accounts",
+        "Transaction history tracking",
+        "Scalable AWS cloud deployment",
+        "Session management"
+      ],
+      "date": "2024",
+      "github": "",
+      "live": ""
     }
   ]
 }

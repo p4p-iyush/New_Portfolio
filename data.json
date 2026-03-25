@@ -1,0 +1,411 @@
+{
+  "personal": {
+    "name": "Piyush Jain",
+    "email": "jain4piyush@gmail.com",
+    "phone": "+91-9753868553",
+    "github": "https://github.com/jain4piyush",
+    "linkedin": "https://linkedin.com/in/piyush-jain-4b7304251",
+    "hackerrank": "https://www.hackerrank.com/jain4piyush",
+    "instagram": "https://www.instagram.com/p4p.iyush/",
+    "location": "Bhopal, India",
+    "role": "Data Analyst & Full Stack Developer"
+  },
+
+  "summary": {
+    "title": "Piyush Jain",
+    "description": "is a <span>Data Analyst</span> and <span>Full Stack Developer</span> with expertise in <span>SQL, Python, Power BI, and the MERN Stack</span>. Skilled in data cleaning, ETL pipelines, KPI tracking, and interactive dashboard development. Experienced in building <span>scalable web applications</span> and delivering <span>actionable business insights</span> through structured data analysis. Currently pursuing B.Tech in Computer Science with <span>hands-on internship experience</span> at <span>HL Tech India & BSY Consulting</span> and multiple <span>successful freelance projects</span>."
+  },
+
+  "internships": [
+    {
+      "id": "internship1",
+      "title": "Freelance Web Developer",
+      "company": "BSY Consulting, Bhopal",
+      "period": "Nov 2024 - Dec 2024",
+      "duration": "2 mos",
+      "description": "Developed full-stack web applications using MERN stack. Built RESTful APIs, integrated third-party services, and implemented responsive frontend designs.",
+      "responsibilities": [
+        "Built full-stack applications using Html, CSS, JavaScript, Php",
+        "Implemented responsive designs using Tailwind CSS"
+      ],
+      "achievements": [
+        "Successfully delivered Ofical website",
+        "Achieved 98% client satisfaction rate"
+      ]
+    },
+    {
+      "id": "internship2",
+      "title": "Data Engineering Intern",
+      "company": "BSY Consulting, Bhopal",
+      "period": "Sep 2024 - Nov 2024",
+      "duration": "3 mos",
+      "description": "Executed SQL queries and Python scripts to process and clean datasets for analytics and reporting pipelines. Performed ETL processes, data migration, and data validation for accurate business reporting.",
+      "responsibilities": [
+        "Executed SQL queries and Python data processing for analytics pipelines supporting business reporting",
+        "Gained hands-on Azure Data Warehouse exposure, building foundational ETL skills for scalable data operations",
+        "Performed data validation and quality checks, ensuring accuracy for downstream MIS reporting requirements",
+        "Identified process improvement opportunities and communicated issues to relevant teams"
+      ],
+      "achievements": [
+        "Optimized data processing time by 25%",
+        "Learn automated manual reporting processes"
+      ]
+    },
+    {
+      "id": "internship3",
+      "title": "Software Development Engineer Intern",
+      "company": "HL Tech India, Bhopal",
+      "period": "Jul 2025 - Oct 2025",
+      "duration": "4 mos",
+      "description": "Developed and maintained backend architecture for The Gypsy Adventures, implementing RESTful APIs, admin panel features, and data management modules.",
+      "responsibilities": [
+        "Developed backend architecture for The Gypsy Adventures with RESTful APIs",
+        "Collaborated with frontend developers to build and optimize multiple React pages",
+        "Contributed to TGA Storage, a media optimization module for compressing and storing images and videos",
+        "Optimized PostgreSQL queries and backend performance for reporting needs"
+      ],
+      "achievements": [
+        "Improved website load speed by 30% through SEO enhancement and performance tuning",
+        "Improved data retrieval speed by 30% through query optimization",
+        "Integrated backend systems clearing 50+ test cases with zero errors"
+      ]
+    }
+  ],
+
+  "freelancing": [
+    {
+      "id": "freelance1",
+      "title": "Asusual.in - E-commerce Platform",
+      "client": "Freelance Project",
+      "period": "Feb 2024 - Present",
+      "description": "Designed, developed, tested, and debugged scalable full-stack e-commerce solution meeting business requirements.",
+      "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe", "Tailwind CSS"],
+      "features": [
+        "Secure payment gateway integration",
+        "Shopping cart and order management",
+        "Admin panel for inventory management",
+        "Responsive design for all devices"
+      ],
+      "achievements": [
+        "Achieved 80+ Lighthouse score",
+        "Successfully processed 500+ orders"
+      ],
+      "github": "",
+      "live": "https://asusual.in"
+    },
+    {
+      "id": "freelance2",
+      "title": "Zenaura.in - Crystal & Cannel Store",
+      "client": "Freelance Project",
+      "period": "Mar 2025 - Present",
+      "description": "Developed premium e-commerce platform for luxury crystal and cannel products with advanced features including product filtering, wishlist, and real-time inventory tracking.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Razorpay", "Material-UI", "AWS S3"],
+      "features": [
+        "Real-time inventory tracking system",
+        "Advanced product filtering and search",
+        "Google OAuth authentication",
+        "Wishlist functionality"
+      ],
+      "achievements": [
+        "4.8/5 client satisfaction rating",
+        "99.9% uptime achieved"
+      ],
+      "github": "",
+      "live": "https://zenaura.in"
+    },
+    {
+      "id": "freelance3",
+      "title": "The Gypsy Adventures - Tourism Platform",
+      "client": "Internship + Freelance Project",
+      "period": "Aug 2024 - Present",
+      "description": "Built comprehensive tourism booking platform with tour packages, hotel integration, multi-step booking forms, admin dashboard, and payment gateway.",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Razorpay", "Tailwind CSS"],
+      "features": [
+        "Tour package browsing and booking system",
+        "Hotel booking integration with external APIs",
+        "Media optimization module (TGA Storage)",
+        "Admin dashboard for content management"
+      ],
+      "achievements": [
+        "Reduced server storage usage by 40%",
+        "Currently serving 100+ active users"
+      ],
+      "github": "",
+      "live": "https://thegypsyadventures.com"
+    }
+  ],
+
+  "education": [
+    {
+      "id": "edu1",
+      "degree": "B.Tech in Computer Science & Engineering",
+      "institution": "SISTec-R, Bhopal",
+      "period": "2022 - 2026",
+      "grade": "CGPA: 7.82/10",
+      "coursework": ["Data Structures", "DBMS", "Web Technologies", "Software Engineering", "Cloud Computing", "Operating Systems", "Computer Networks", "AI/ML"],
+      "projects": "15+ Web Applications, Data Analytics Dashboards, and Full-stack Projects"
+    },
+    {
+      "id": "edu2",
+      "degree": "12th Standard (CBSE)",
+      "institution": "Carmel Convent Sr Sec School, Bhopal",
+      "period": "2022",
+      "grade": "76%",
+      "stream": "Science with Computer Science (PCM + CS)"
+    },
+    {
+      "id": "edu3",
+      "degree": "10th Standard (CBSE)",
+      "institution": "Carmel Convent Sr Sec School, Bhopal",
+      "period": "2020",
+      "grade": "80%"
+    }
+  ],
+
+  "skills": {
+    "dataAnalytics": [
+      {
+        "name": "SQL & Databases",
+        "tags": ["Joins", "Subqueries", "Aggregations", "MySQL", "PostgreSQL", "MongoDB"],
+        "details": "Complex SQL queries, Database design and optimization, Data validation and quality checks",
+        "certifications": ["HackerRank SQL (Basic & Intermediate)"]
+      },
+      {
+        "name": "Visualization & BI",
+        "tags": ["Power BI", "Tableau", "Excel Dashboards", "KPI Tracking"],
+        "details": "Power BI dashboards with KPIs, filters, and slicers; Excel: Pivot Tables, VLOOKUP/XLOOKUP, IF functions, Charts",
+        "certifications": ["Power BI Fundamentals - Microsoft"]
+      },
+      {
+        "name": "Python & ETL",
+        "tags": ["Pandas", "Data Cleaning", "ETL Pipelines", "APIs"],
+        "details": "Python (Pandas) for data cleaning and transformation; ETL pipeline development; API integration",
+        "certifications": ["Python Essentials 1 & 2 - Cisco"]
+      }
+    ],
+    "development": [
+      {
+        "name": "Frontend",
+        "tags": ["React.js", "HTML5/CSS3", "JavaScript", "Tailwind"],
+        "details": "React.js, HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, Material-UI",
+        "certifications": ["React Js + Node Js - Scaler"]
+      },
+      {
+        "name": "Backend",
+        "tags": ["Node.js", "Express.js", "Python", "REST APIs"],
+        "details": "Node.js, Express.js, Python, RESTful APIs, JWT Authentication",
+        "certifications": ["Node.js - Scaler", "SQL & PostgreSQL - Udemy"]
+      },
+      {
+        "name": "Cloud & Tools",
+        "tags": ["AWS EC2", "Azure", "Git/GitHub", "Postman"],
+        "details": "AWS EC2, Azure Data Warehouse, Git, GitHub, Postman, VS Code",
+        "certifications": ["Cloud Banking Application (Flask + AWS)"]
+      }
+    ]
+  },
+
+  "achievements": [
+    {
+      "category": "🏆 HackerRank Certified",
+      "details": ["SQL (Basic & Intermediate)", "Python", "JavaScript", "CSS"]
+    },
+    {
+      "category": "📜 Professional Certifications",
+      "details": [
+        "React Js + Node Js - Scaler",
+        "Python Essentials 1 & 2 (Cisco)",
+        "Power BI (Microsoft)",
+        "SQL & PostgreSQL for Beginners (Udemy)",
+        "AI Builder Lab (H2SKILL)"
+      ]
+    },
+    {
+      "category": "🎯 Hackathon Achievements",
+      "details": ["Top 5 @ SISTec Hackathon", "Top 3 @ JLU Bhopal"]
+    },
+    {
+      "category": "📊 Forage Program",
+      "details": ["Deloitte Australia Technology Job Simulation (Feb 2026)"]
+    }
+  ],
+
+  "projects": {
+    "college": [
+      {
+        "name": "Police MIS Dashboard System",
+        "tech": ["React", "Node.js", "MongoDB", "Express"],
+        "description": "Management system handling 200+ data records with evidence logging and mapping functionality",
+        "features": ["Evidence tracking", "Crime data analysis", "Interactive maps"],
+        "github": ""
+      },
+      {
+        "name": "Sankat Mochan Healthcare Portal",
+        "tech": ["React", "Node.js", "MongoDB", "Python", "AI/ML"],
+        "description": "Hospital management software with AI chatbot integration",
+        "features": ["Real-time queue management", "Bed allocation", "AI-powered report analysis"],
+        "github": ""
+      },
+      {
+        "name": "JPL/PPL Programming Platform",
+        "tech": ["React", "Node.js", "MongoDB", "Monaco Editor"],
+        "description": "Competitive coding platform with real-time quizzes and code compilation",
+        "features": ["Participant registration", "Live code compilation", "AI chatbot"],
+        "github": ""
+      }
+    ],
+    "dataAnalytics": [
+      {
+        "name": "Insurance Premium & Payout KPI Analytics Dashboard",
+        "tech": ["Power BI", "Excel", "Power Query"],
+        "description": "Interactive dashboard to analyze insurance premium collections and payout performance",
+        "features": ["Claim ratio tracking", "Premium growth analysis", "Payout trends"],
+        "github": ""
+      },
+      {
+        "name": "E-Commerce MIS Reporting & Capacity Tracker",
+        "tech": ["Advanced Excel", "Pivot Tables"],
+        "description": "Daily and monthly MIS reports to track orders, payments, and delivery",
+        "features": ["Revenue analysis", "Return rates tracking", "Category performance"],
+        "github": ""
+      },
+      {
+        "name": "Weather Data Pipeline using API",
+        "tech": ["Python", "Pandas", "PostgreSQL"],
+        "description": "End-to-end automated data pipeline extracting real-time weather data",
+        "features": ["API integration", "Data transformation", "Database storage"],
+        "github": ""
+      },
+      {
+        "name": "Customer Trends & Sales Analysis",
+        "tech": ["Python", "SQL", "Power BI"],
+        "description": "Analysis of customer transaction data with interactive dashboards",
+        "features": ["Revenue trends", "Customer segmentation", "Product performance"],
+        "github": ""
+      }
+    ],
+    "personal": [
+      {
+        "name": "Gaming Platform",
+        "tech": ["React", "Node.js", "WebSocket"],
+        "description": "Multiplayer gaming platform with real-time interactions",
+        "github": ""
+      },
+      {
+        "name": "Portfolio Website",
+        "tech": ["HTML5", "CSS3", "JavaScript"],
+        "description": "Personal portfolio showcasing projects and skills",
+        "github": "https://github.com/jain4piyush/portfolio"
+      },
+      {
+        "name": "Notepad for Writing Notes & Code",
+        "tech": ["React", "LocalStorage"],
+        "description": "Note-taking app with code highlighting support",
+        "github": ""
+      },
+      {
+        "name": "Denoise The Audio",
+        "tech": ["Python", "Audio Processing"],
+        "description": "Audio denoising application using signal processing",
+        "github": ""
+      }
+    ],
+    "cloud": [
+      {
+        "name": "Cloud Banking Application",
+        "tech": ["Python", "Flask", "AWS EC2", "DynamoDB"],
+        "description": "Secure cloud-based banking system with account management and transaction processing",
+        "features": ["Secure authentication", "Deposits/Withdrawals", "Transaction history"],
+        "github": ""
+      }
+    ]
+  },
+
+  "certificates": [
+    {
+      "name": "React Js + Node Js",
+      "platform": "Scaler",
+      "url": "https://www.scaler.com/topics/course/javascript-beginners/",
+      "date": "2024"
+    },
+    {
+      "name": "Node.js Course",
+      "platform": "Scaler",
+      "url": "https://www.scaler.com/topics/course/nodejs/",
+      "date": "2024"
+    },
+    {
+      "name": "Free React.js Course",
+      "platform": "Scaler",
+      "url": "https://www.scaler.com/topics/course/free-react-js-course/",
+      "date": "2024"
+    },
+    {
+      "name": "HTML Course",
+      "platform": "Scaler",
+      "url": "https://www.scaler.com/topics/html/",
+      "date": "2024"
+    },
+    {
+      "name": "CSS Course",
+      "platform": "Scaler",
+      "url": "https://www.scaler.com/topics/css/",
+      "date": "2024"
+    },
+    {
+      "name": "SQL & PostgreSQL for Beginners",
+      "platform": "Udemy",
+      "url": "https://www.udemy.com/course/sql-and-postgresql-for-beginners/",
+      "date": "2024"
+    },
+    {
+      "name": "Deloitte Australia Technology Job Simulation",
+      "platform": "Forage",
+      "url": "",
+      "date": "Feb 2026"
+    },
+    {
+      "name": "HackerRank SQL (Basic & Intermediate)",
+      "platform": "HackerRank",
+      "url": "",
+      "date": "2024"
+    },
+    {
+      "name": "Python Certification",
+      "platform": "HackerRank",
+      "url": "",
+      "date": "2024"
+    },
+    {
+      "name": "Power BI Fundamentals",
+      "platform": "Microsoft",
+      "url": "",
+      "date": "2024"
+    },
+    {
+      "name": "Python Essentials 1 & 2",
+      "platform": "Cisco",
+      "url": "",
+      "date": "2024"
+    },
+    {
+      "name": "AI Builder Lab",
+      "platform": "H2SKILL",
+      "url": "",
+      "date": "2024"
+    }
+  ],
+
+  "stats": {
+    "yearsExperience": "Fresher",
+    "projectsCompleted": "15+",
+    "technologiesMastered": "15+",
+    "githubCommits": "100+"
+  },
+
+  "contact": {
+    "email": "jain4piyush@gmail.com",
+    "phone": "+91-9753868553",
+    "availability": "Open for opportunities"
+  }
+}

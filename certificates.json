@@ -1,85 +1,214 @@
 {
   "certificates": [
     {
-      "id": "cyber-security",
-      "title": " JavaScript (HackerRank)",
+      "id": "hackerrank-js",
+      "title": "JavaScript (HackerRank)",
       "image": "./assests/Certificates/jsBasic.png",
       "issuer": "HackerRank",
-      "date": "2023-04-10",
-      "category": "programming"
+      "date": "2024",
+      "category": "programming",
+      "credentialId": "",
+      "link": "https://www.hackerrank.com/certificates"
     },
     {
-      "id": "hackerrank-skills",
+      "id": "hackerrank-css",
       "title": "CSS (HackerRank)",
       "image": "./assests/Certificates/css certificate .png",
       "issuer": "HackerRank",
-      "date": "2023-04-10",
-      "category": "programming"
+      "date": "2024",
+      "category": "programming",
+      "credentialId": "",
+      "link": "https://www.hackerrank.com/certificates"
+    },
+    {
+      "id": "hackerrank-python",
+      "title": "Python (HackerRank)",
+      "image": "./assests/Certificates/python-certificate.png",
+      "issuer": "HackerRank",
+      "date": "2024",
+      "category": "programming",
+      "credentialId": "",
+      "link": "https://www.hackerrank.com/certificates"
+    },
+    {
+      "id": "hackerrank-sql-basic",
+      "title": "SQL (Basic) - HackerRank",
+      "image": "./assests/Certificates/sql-basic.png",
+      "issuer": "HackerRank",
+      "date": "2024",
+      "category": "database",
+      "credentialId": "",
+      "link": "https://www.hackerrank.com/certificates"
+    },
+    {
+      "id": "hackerrank-sql-intermediate",
+      "title": "SQL (Intermediate) - HackerRank",
+      "image": "./assests/Certificates/sql-intermediate.png",
+      "issuer": "HackerRank",
+      "date": "2024",
+      "category": "database",
+      "credentialId": "",
+      "link": "https://www.hackerrank.com/certificates"
     },
     {
       "id": "ai-builder",
-      "title": "AI Builder Lab (H2SKILL)",
+      "title": "AI Builder Lab",
       "image": "./assests/Certificates/Hack2skill-Certificate.png",
       "issuer": "Hack2Skill",
-      "date": "2023-03-20",
-      "category": "ai"
+      "date": "2024",
+      "category": "ai",
+      "credentialId": "",
+      "link": ""
     },
     {
       "id": "python-essentials-1",
-      "title": "Python Essentials 1 (CISCO)",
+      "title": "Python Essentials 1",
       "image": "./assests/Certificates/python ess1.png",
-      "issuer": "CISCO",
-      "date": "2023-02-15",
-      "category": "programming"
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "category": "programming",
+      "credentialId": "",
+      "link": "https://www.netacad.com/"
     },
     {
       "id": "python-essentials-2",
-      "title": "Python Essentials 2 (CISCO)",
+      "title": "Python Essentials 2",
       "image": "./assests/Certificates/pyhton ess2.png",
-      "issuer": "CISCO",
-      "date": "2023-01-10",
-      "category": "programming"
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "category": "programming",
+      "credentialId": "",
+      "link": "https://www.netacad.com/"
+    },
+    {
+      "id": "ccna1",
+      "title": "Introduction to Networks",
+      "image": "./assests/Certificates/CCNA1.png",
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "category": "networking",
+      "credentialId": "",
+      "link": "https://www.netacad.com/"
+    },
+    {
+      "id": "ccna2",
+      "title": "Switching, Routing, and Wireless Essentials",
+      "image": "./assests/Certificates/CCNA2.png",
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "category": "networking",
+      "credentialId": "",
+      "link": "https://www.netacad.com/"
+    },
+    {
+      "id": "ccna3",
+      "title": "Enterprise Networking, Security, and Automation",
+      "image": "./assests/Certificates/CCNA3.png",
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "category": "networking",
+      "credentialId": "",
+      "link": "https://www.netacad.com/"
+    },
+    {
+      "id": "cybersecurity-intro",
+      "title": "Introduction to Cybersecurity",
+      "image": "./assests/Certificates/Introduction to cycbersecurity.png",
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "category": "security",
+      "credentialId": "",
+      "link": "https://www.netacad.com/"
+    },
+    {
+      "id": "cybersecurity-essentials",
+      "title": "Cyber Security Essentials",
+      "image": "./assests/Certificates/cybersecurityEssentials.png",
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "category": "security",
+      "credentialId": "",
+      "link": "https://www.netacad.com/"
+    },
+    {
+      "id": "power-bi-fundamentals",
+      "title": "Power BI Fundamentals",
+      "image": "./assests/Certificates/power-bi.png",
+      "issuer": "Microsoft",
+      "date": "2024",
+      "category": "data-analytics",
+      "credentialId": "",
+      "link": ""
+    },
+    {
+      "id": "sql-postgresql",
+      "title": "SQL & PostgreSQL for Beginners",
+      "image": "./assests/Certificates/sql-postgresql.png",
+      "issuer": "Udemy",
+      "date": "2024",
+      "category": "database",
+      "credentialId": "",
+      "link": "https://www.udemy.com/course/sql-and-postgresql-for-beginners/"
+    },
+    {
+      "id": "react-js",
+      "title": "React.js Course",
+      "image": "./assests/Certificates/react-js.png",
+      "issuer": "Scaler",
+      "date": "2024",
+      "category": "web-development",
+      "credentialId": "",
+      "link": "https://www.scaler.com/topics/course/free-react-js-course/"
+    },
+    {
+      "id": "node-js",
+      "title": "Node.js Course",
+      "image": "./assests/Certificates/node-js.png",
+      "issuer": "Scaler",
+      "date": "2024",
+      "category": "web-development",
+      "credentialId": "",
+      "link": "https://www.scaler.com/topics/course/nodejs/"
+    },
+    {
+      "id": "javascript-beginners",
+      "title": "JavaScript for Beginners",
+      "image": "./assests/Certificates/javascript-beginners.png",
+      "issuer": "Scaler",
+      "date": "2024",
+      "category": "programming",
+      "credentialId": "",
+      "link": "https://www.scaler.com/topics/course/javascript-beginners/"
+    },
+    {
+      "id": "html-course",
+      "title": "HTML Course",
+      "image": "./assests/Certificates/html-course.png",
+      "issuer": "Scaler",
+      "date": "2024",
+      "category": "web-development",
+      "credentialId": "",
+      "link": "https://www.scaler.com/topics/html/"
+    },
+    {
+      "id": "css-course",
+      "title": "CSS Course",
+      "image": "./assests/Certificates/css-course.png",
+      "issuer": "Scaler",
+      "date": "2024",
+      "category": "web-development",
+      "credentialId": "",
+      "link": "https://www.scaler.com/topics/css/"
+    },
+    {
+      "id": "deloitte-forage",
+      "title": "Deloitte Australia Technology Job Simulation",
+      "image": "./assests/Certificates/deloitte-forage.png",
+      "issuer": "Forage",
+      "date": "Feb 2026",
+      "category": "professional",
+      "credentialId": "",
+      "link": "https://www.theforage.com/"
     }
-,{
-    "id": "CCNA1",
-    "title": "Introduction to Networks (CISCO Netacad)",
-    "image": "./assests/Certificates/CCNA1.png",
-    "issuer": "CISCO Networking Academy",
-    "date": "2022-12-05",
-    "category": "networking"
-},
-{
-    "id": "CCNA2",
-    "title": "Switching, Routing, and Wireless Essentials (CISCO Netacad)",
-    "image": "./assests/Certificates/CCNA2.png",
-    "issuer": "CISCO Networking Academy",
-    "date": "2022-11-01",
-    "category": "networking"
-},
-{
-    "id": "CCNA3",
-    "title": "Enterprise Networking, Security, and Automation (CISCO Netacad)",
-    "image": "./assests/Certificates/CCNA3.png",
-    "issuer": "CISCO Networking Academy",
-    "date": "2022-10-01",
-    "category": "networking"
-},
-{
-    "id": "IntroductiontoCybersecurity",
-    "title": "Introduction to Cybersecurity (CISCO Netacad)",
-        "image": "./assests/Certificates/Introduction to cycbersecurity.png",
-    "issuer": "CISCO Networking Academy",
-    "date": "2022-09-01",
-    "category": "networking"
-    }
-,{
-    "id":"cyber-security-essentials",
-    "title": "Cyber Security Essentials (CISCO Netacad)",
-    "image": "./assests/Certificates/cybersecurityEssentials.png",
-    "issuer": "CISCO Networking Academy",
-    "date": "2022-08-01",
-    "category": "security"
-
-}
   ]
 }
